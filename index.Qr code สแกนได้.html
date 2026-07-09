@@ -397,6 +397,16 @@ padding:13px 18px;
 
 width:100%;
 
+transition:transform .08s ease;
+
+}
+
+
+/* ✅ ภาพเคลื่อนไหวตอนกด (feedback ชัดเจนสำหรับทุกเครื่อง รวม iPhone ที่ไม่รองรับการสั่นจากเว็บ) */
+.btn:active{
+
+transform:scale(0.96);
+
 }
 
 
@@ -759,6 +769,75 @@ background:#c23b3b;
 }
 
 
+/* ✅ Dark mode: ตามการตั้งค่าเครื่อง (ใช้บ่อยตอนกลางคืนในโกดัง) */
+@media (prefers-color-scheme: dark){
+:root{
+--ink:#e8edf1;
+--paper:#0f1720;
+--card:#182430;
+--line:#2a3946;
+--muted:#8a9aa8;
+--sea-soft:#152736;
+--good-soft:#0f2a1d;
+--bad-soft:#2e1414;
+}
+.code-input{
+background:#101a24;
+color:var(--ink);
+}
+}
+
+
+/* ✅ เคารพการตั้งค่า "ลดการเคลื่อนไหว" ของผู้ใช้ (accessibility) */
+@media (prefers-reduced-motion: reduce){
+*{
+transition-duration:0.01ms !important;
+animation-duration:0.01ms !important;
+}
+}
+
+
+/* ✅ ปุ่มตอนกำลังทำงาน (ค้นหา/เปิดกล้อง) กันกดซ้ำ + บอกสถานะชัดเจน */
+.btn:disabled{
+opacity:.6;
+cursor:not-allowed;
+transform:none !important;
+}
+
+
+/* ✅ แถบแจ้งเตือนออฟไลน์ */
+.offline-banner{
+position:fixed;
+top:0;
+left:0;
+right:0;
+background:#c23b3b;
+color:#fff;
+text-align:center;
+font-size:12.5px;
+font-weight:600;
+padding:8px 12px;
+z-index:200;
+transform:translateY(-100%);
+transition:transform .25s ease;
+}
+
+.offline-banner.show{
+transform:translateY(0);
+}
+
+
+/* ✅ เผื่อพื้นที่ safe-area สำหรับจอมี notch/gesture bar (iPhone รุ่นใหม่ๆ) */
+#app{
+padding-bottom:env(safe-area-inset-bottom);
+}
+
+header.topbar{
+padding-top:calc(18px + env(safe-area-inset-top));
+}
+
+
+
 
 </style>
 
@@ -767,6 +846,7 @@ background:#c23b3b;
 
 <body>
 
+<div id="offlineBanner" class="offline-banner">📡 ขาดการเชื่อมต่ออินเทอร์เน็ต — ผลค้นหาอาจไม่เป็นปัจจุบัน</div>
 
 <div id="app">
 
@@ -867,7 +947,7 @@ DATABASE
 <div class="manual-field">
 
 
-<label>
+<label for="manualInput">
 BOX_NO
 </label>
 
@@ -881,6 +961,12 @@ BOX_NO
 id="manualInput"
 
 class="code-input"
+
+autocomplete="off"
+
+autocapitalize="characters"
+
+inputmode="text"
 
 placeholder="เช่น BOX001">
 
@@ -957,7 +1043,7 @@ style="width:auto">
 
 
 
-<div id="scanResult" style="display:none"></div>
+<div id="scanResult" style="display:none" aria-live="polite"></div>
 
 
 
@@ -972,7 +1058,7 @@ style="width:auto">
 
 
 
-<div id="toast" class="toast"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
 
 (function(){
@@ -981,7 +1067,7 @@ style="width:auto">
 
 // ⚠️ แก้ URL นี้ให้เป็น URL ของ Apps Script Web App ที่คุณ Deploy ไว้
 // (หน้าตาแบบ: https://script.google.com/macros/s/xxxxxxx/exec)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3UvwvBumX3Gx4Sp3FaD5fJnB2_b_0cBGdlGr8UxnxfHuRdX5pp2bH-CrxeTJ7VBV4/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhCWEirAVBD3x6ki-bhMFpV_DqEgPrrx7HXYRdLX4lYfSMaqdLLkgmAFnP6LXCQqSMSw/exec";
 
 let qrScanner = null;
 
@@ -991,6 +1077,44 @@ let qrScanner = null;
 // ตรวจจับ flash/torch ในตัวอยู่แล้ว ไม่ต้องเขียน loop สแกนเองอีกต่อไป
 // ต้องตั้ง WORKER_PATH ให้ตรงกับเวอร์ชันที่โหลดมา (ดู <script> ใน <head>)
 QrScanner.WORKER_PATH = "https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner-worker.min.js";
+
+
+// =====================
+// ✅ Security: escape ข้อมูลก่อนแทรกลง innerHTML เสมอ
+// ป้องกัน XSS หากมีคนพิมพ์ <script> หรือ HTML แปลกๆ ไว้ในคอลัมน์ Sheet (เช่น NOTE)
+// =====================
+const HTML_ESCAPE_MAP = { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" };
+
+function esc(value){
+const str = (value === null || value === undefined || value === "") ? "-" : String(value);
+return str.replace(/[&<>"']/g, ch => HTML_ESCAPE_MAP[ch]);
+}
+
+
+// =====================
+// ✅ Haptic feedback: สั่นเบาๆ ยืนยันว่า "กดติดแล้ว" (Android รองรับ, iOS Safari ไม่รองรับ — ไม่ error แค่เงียบ)
+// =====================
+function vibrate(pattern){
+try{
+if(navigator.vibrate) navigator.vibrate(pattern);
+}catch(e){
+// เงียบไว้ ไม่กระทบการทำงานหลัก
+}
+}
+
+
+// =====================
+// ✅ Offline detection: เตือนผู้ใช้ทันทีถ้าเน็ตหลุด (สำคัญมากในโกดังที่ WiFi ไม่เสถียร)
+// =====================
+const offlineBanner = document.getElementById("offlineBanner");
+
+function updateOnlineStatus(){
+offlineBanner.classList.toggle("show", !navigator.onLine);
+}
+
+window.addEventListener("online", updateOnlineStatus);
+window.addEventListener("offline", updateOnlineStatus);
+updateOnlineStatus();
 
 
 
@@ -1021,22 +1145,134 @@ t.className="toast";
 
 
 // =====================
-// Search DATABASE (เรียกผ่าน JSONP ไปยัง Apps Script API)
+// ✅ Local database.json: โหลดครั้งเดียวไว้ในเครื่อง ค้นหาแบบ instant (ไม่ผ่านเครือข่ายเลย)
+// ถ้าไฟล์นี้ไม่มี/โหลดไม่สำเร็จ -> fallback ไปเรียก Apps Script (JSONP) แบบเดิมอัตโนมัติ
 // =====================
 
-function searchBox(boxNo){
+let DB_DATA = null;
+let DB_UPDATED_AT = null;
 
-if(!boxNo){
+async function loadDatabase(force){
+try{
+const url = "database.json" + (force ? ("?t=" + Date.now()) : "");
+const res = await fetch(url, { cache: force ? "no-store" : "default" });
+if(!res.ok) throw new Error("HTTP " + res.status);
+
+DB_DATA = await res.json();
+DB_UPDATED_AT = new Date();
+
+setStatus(true, "DATABASE");
+}catch(e){
+console.log("โหลด database.json ไม่สำเร็จ จะใช้ Apps Script แทนตอนค้นหา:", e);
+DB_DATA = null;
+setStatus(false, "DATABASE (fallback)");
+}
+}
+
+function setStatus(ok, label){
+document.getElementById("statusDot").classList.toggle("ok", ok);
+document.getElementById("statusText").textContent = label;
+}
+
+// โหลดทันทีตอนเปิดหน้า แล้วรีเฟรชเป็นระยะ เผื่อเปิดแอปค้างไว้นาน
+loadDatabase(false);
+setInterval(()=>loadDatabase(true), 5*60*1000);
+
+// รีเฟรชทันทีเมื่อผู้ใช้กลับมาเปิดแท็บ/แอปนี้อีกครั้ง (เผื่อข้อมูลเปลี่ยนระหว่างที่ไม่ได้ใช้งาน)
+document.addEventListener("visibilitychange", ()=>{
+if(document.visibilityState === "visible") loadDatabase(true);
+});
+
+
+
+// =====================
+// Search DATABASE
+// ใช้ database.json ในเครื่องก่อนเสมอ (เร็วสุด) ถ้าไม่มี -> fallback Apps Script
+// =====================
+
+let searchToken = 0; // ✅ กัน race condition: ถ้ากดค้นหาซ้ำเร็วๆ ผลลัพธ์เก่าจะถูกทิ้งไม่ให้มาทับผลใหม่
+
+function setSearchBusy(busy){
+const btn = document.getElementById("btnManualSearch");
+if(btn){
+btn.disabled = busy;
+btn.textContent = busy ? "กำลังค้นหา…" : "ค้นหา";
+}
+}
+
+async function searchBox(boxNo){
+
+const trimmed = (boxNo || "").trim();
+
+if(!trimmed){
 toast("กรุณาใส่ BOX_NO","error");
 return;
 }
 
+// ✅ สั่นสั้นๆ ทันทีตอนเริ่มค้นหาจริง ยืนยันว่า "กดติดแล้ว"
+vibrate(15);
+
+const myToken = ++searchToken;
+setSearchBusy(true);
+
+try{
+if(DB_DATA){
+searchBoxLocal(trimmed, myToken);
+}else{
+await searchBoxViaAppsScript(trimmed, myToken);
+}
+}finally{
+if(myToken === searchToken) setSearchBusy(false);
+}
+
+}
+
+
+
+function normalizeCode(v){
+return String(v).trim().toUpperCase().replace(/\s+/g,"");
+}
+
+
+function searchBoxLocal(boxNo, myToken){
+
+const search = normalizeCode(boxNo);
+
+const row = DB_DATA.find(r => normalizeCode(r.boxNo) === search);
+
+if(myToken !== searchToken) return; // มีการค้นหาใหม่แซงไปแล้ว ทิ้งผลลัพธ์นี้
+
+if(row){
+showResult({
+found: true,
+type: row.type,
+boxNo: row.boxNo,
+itemCode: row.itemCode,
+itemName: row.itemName,
+qty: row.qty,
+tray: row.tray,
+note: row.note
+}, boxNo);
+}else{
+showResult({ found:false }, boxNo);
+}
+
+}
+
+
+
+// Fallback: เรียกผ่าน JSONP ไปยัง Apps Script API (ใช้เฉพาะตอนโหลด database.json ไม่สำเร็จ)
+function searchBoxViaAppsScript(boxNo, myToken){
+
+return new Promise((resolve)=>{
+
 if(SCRIPT_URL.indexOf("PUT_YOUR_DEPLOYMENT_ID_HERE") !== -1){
 toast("ยังไม่ได้ตั้งค่า SCRIPT_URL ในโค้ด","error");
+resolve();
 return;
 }
 
-const callbackName = "jsonpCallback_" + Date.now();
+const callbackName = "jsonpCallback_" + Date.now() + "_" + myToken;
 const script = document.createElement("script");
 
 let done = false;
@@ -1044,8 +1280,11 @@ let done = false;
 const timeout = setTimeout(()=>{
 if(!done){
 done = true;
+if(myToken === searchToken){
 toast("เชื่อมต่อ DATABASE ไม่ได้ (timeout)","error");
+}
 cleanup();
+resolve();
 }
 }, 10000);
 
@@ -1058,16 +1297,22 @@ window[callbackName] = function(data){
 if(done) return;
 done = true;
 clearTimeout(timeout);
+if(myToken === searchToken){
 showResult(data,boxNo);
+}
 cleanup();
+resolve();
 };
 
 script.onerror = function(){
 if(done) return;
 done = true;
 clearTimeout(timeout);
+if(myToken === searchToken){
 toast("เชื่อมต่อ DATABASE ไม่ได้","error");
+}
 cleanup();
+resolve();
 };
 
 script.src = SCRIPT_URL
@@ -1075,6 +1320,8 @@ script.src = SCRIPT_URL
 + "&callback=" + callbackName;
 
 document.body.appendChild(script);
+
+});
 
 }
 
@@ -1101,6 +1348,9 @@ stopCamera();
 result.style.display="block";
 
 
+// ✅ สั่นแยกความรู้สึก: พบข้อมูล = สั่นครั้งเดียว, ไม่พบ = สั่น 2 จังหวะสั้นๆ (แจ้งเตือน)
+vibrate(data.found ? 60 : [40,80,40]);
+
 
 if(data.found){
 
@@ -1119,7 +1369,7 @@ result.innerHTML=`
 
 
 <span class="badge">
-${data.type}
+${esc(data.type)}
 </span>
 
 
@@ -1136,7 +1386,7 @@ TRAY
 
 
 <div class="num">
-#${data.tray}
+#${esc(data.tray)}
 </div>
 
 
@@ -1219,7 +1469,7 @@ BOX_NO
 
 
 <div class="num">
-${code}
+${esc(code)}
 </div>
 
 
@@ -1273,10 +1523,10 @@ return `
 
 <div class="detail-row">
 
-<span class="k">${k}</span>
+<span class="k">${esc(k)}</span>
 
 <span class="v">
-${v||"-"}
+${esc(v)}
 </span>
 
 
@@ -1461,9 +1711,19 @@ document
 .addEventListener("click", toggleTorch);
 
 
+// ✅ หยุดกล้องอัตโนมัติเมื่อผู้ใช้สลับแท็บ/พับแอป (ประหยัดแบต + ความเป็นส่วนตัว)
+// ไม่ปิดหน้ากล้องทั้งหมด แค่หยุดสตรีมชั่วคราว ผู้ใช้กลับมาต้องกดเปิดกล้องใหม่
+document.addEventListener("visibilitychange", ()=>{
+if(document.visibilityState === "hidden" && qrScanner){
+stopCamera();
+document.getElementById("scanCamera").style.display="none";
+document.getElementById("scanIdle").style.display="block";
+}
+});
 
-// สถานะ DATABASE เขียวไว้เฉย ๆ เพราะเช็คได้ตอนค้นหาจริงเท่านั้น (ไม่มี healthcheck endpoint แยก)
-document.getElementById("statusDot").classList.add("ok");
+
+// สถานะ DATABASE ถูกอัปเดตจริงโดย loadDatabase()/setStatus() ด้านบน
+// (เขียว = โหลด database.json สำเร็จ, เทา = fallback ไป Apps Script)
 
 
 })();
