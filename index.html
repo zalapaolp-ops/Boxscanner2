@@ -8,7 +8,7 @@
   <title>หาตะกร้า | Box → Basket Finder</title>
 
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0B1520">
+  <meta name="theme-color" content="#ECE7D8">
   <link rel="apple-touch-icon" href="icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -21,60 +21,35 @@
 
   <style>
     /* ==========================================================================
-       🎨 WORLD-CLASS COLOR PALETTE & DESIGN TOKENS
+       🎨 WAREHOUSE MANIFEST THEME — paper stock + stamped ink palette
        ========================================================================== */
     :root {
-      --bg-app: #f8fafc;
-      --surface: #ffffff;
-      --surface-raised: #ffffff;
-      --border: #e2e8f0;
-      --border-focus: #4f46e5;
-      
-      --text-main: #0f172a;
-      --text-muted: #64748b;
-      --text-inverse: #ffffff;
-      
-      --primary: #0f172a;
-      --primary-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-      --accent: #4f46e5;
-      --accent-soft: #eeecfd;
-      
-      --good: #10b981;
-      --good-soft: #f0fdf4;
-      --bad: #ef4444;
-      --bad-soft: #fef2f2;
-      
-      --radius-sm: 12px;
-      --radius-md: 20px;
-      --radius-lg: 28px;
-      --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 8px -1px rgba(15, 23, 42, 0.04);
-      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
+      --bg-app: #ECE6D4;
+      --surface: #F8F4E8;
+      --surface-raised: #FFFFFF;
+      --border: #DCD2B4;
+      --border-focus: #B5710A;
 
-    /* 🌙 AUTOMATIC DARK MODE PRO PRESET */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-app: #080e16;
-        --surface: #111b27;
-        --surface-raised: #172434;
-        --border: #203044;
-        --border-focus: #818cf8;
-        
-        --text-main: #f8fafc;
-        --text-muted: #94a3b8;
-        
-        --primary: #ffffff;
-        --primary-gradient: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-        --accent: #818cf8;
-        --accent-soft: rgba(129, 140, 248, 0.15);
-        
-        --good: #34d399;
-        --good-soft: rgba(52, 211, 153, 0.1);
-        --bad: #f87171;
-        --bad-soft: rgba(248, 113, 113, 0.1);
-        --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
-      }
+      --text-main: #221E17;
+      --text-muted: #7C7460;
+      --text-inverse: #FFFFFF;
+
+      --primary: #221E17;
+      --primary-gradient: linear-gradient(135deg, #2E2A21 0%, #17140F 100%);
+      --accent: #B5710A;
+      --accent-soft: #F1E1BE;
+
+      --good: #2F6B45;
+      --good-soft: #E4ECDF;
+      --bad: #A83226;
+      --bad-soft: #F2E0D9;
+
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 2px rgba(34, 30, 23, 0.08);
+      --shadow-md: 0 3px 14px rgba(34, 30, 23, 0.10);
+      --shadow-lg: 0 14px 30px -8px rgba(34, 30, 23, 0.22);
     }
 
     /* ==========================================================================
@@ -99,19 +74,15 @@
        👑 HEADER / TOPBAR
        ========================================================================== */
     header.topbar {
-      background: rgba(248, 250, 252, 0.8);
+      background: rgba(236, 230, 212, 0.85);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       padding: 20px 24px;
+      border-bottom: 2px dashed var(--border);
       position: sticky;
       top: 0;
       z-index: 100;
-      border-bottom: 1px solid var(--border);
     }
-    @media (prefers-color-scheme: dark) {
-      header.topbar { background: rgba(8, 14, 22, 0.8); }
-    }
-
     header.topbar .row1 { display: flex; align-items: center; justify-content: space-between; }
     header.topbar h1 {
       font-size: 20px;
@@ -121,6 +92,15 @@
       align-items: center;
       gap: 10px;
       letter-spacing: -0.5px;
+    }
+    .header-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 4px 0 0 34px;
     }
     .box-emoji { font-size: 24px; transform: translateY(-1px); }
 
@@ -198,10 +178,6 @@
       color: var(--surface);
       box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
     }
-    @media (prefers-color-scheme: dark) {
-      .btn-primary { color: #000; font-weight: 700; }
-    }
-
     .btn-secondary {
       background: var(--surface-raised);
       color: var(--text-main);
@@ -264,7 +240,7 @@
       box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.6);
     }
     .cam-frame::before, .cam-frame::after {
-      content: ''; position: absolute; width: 24px; height: 24px; border-color: #fff; border-style: solid; border-width: 0;
+      content: ''; position: absolute; width: 24px; height: 24px; border-color: var(--accent); border-style: solid; border-width: 0;
     }
     .cam-frame::before { top: -2px; left: -2px; border-top-width: 4px; border-left-width: 4px; border-top-left-radius: 12px; }
     .cam-frame::after { bottom: -2px; right: -2px; border-bottom-width: 4px; border-right-width: 4px; border-bottom-right-radius: 12px; }
@@ -296,9 +272,21 @@
     .result-top.found { background: var(--good-soft); border-bottom: 1px solid var(--border); }
     .result-top.notfound { background: var(--bad-soft); border-bottom: 1px solid var(--border); }
 
-    .badge { padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
-    .badge.found { background: var(--good); color: #fff; }
-    .badge.notfound { background: var(--bad); color: #fff; }
+    .badge {
+      padding: 5px 14px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      background: transparent;
+      border: 2px dashed currentColor;
+      display: inline-block;
+    }
+    .badge.found { color: var(--good); transform: rotate(-4deg); }
+    .badge.notfound { color: var(--bad); transform: rotate(-4deg); }
+    .badge.badge-type { border-style: solid; color: var(--text-muted); transform: none; }
 
     .basket-hero { text-align: center; padding: 36px 24px; background: linear-gradient(180deg, var(--surface) 0%, var(--bg-app) 100%); }
     .basket-hero .label { color: var(--text-muted); font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
@@ -384,6 +372,7 @@
           <span id="statusText">DATABASE</span>
         </div>
       </div>
+      <div class="header-eyebrow">BOX → BASKET MANIFEST</div>
     </header>
 
     <main>
@@ -447,6 +436,8 @@
 
       const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3UvwvBumX3Gx4Sp3FaD5fJnB2_b_0cBGdlGr8UxnxfHuRdX5pp2bH-CrxeTJ7VBV4/exec";
       let qrScanner = null;
+      let lastScannedNorm = null;
+      let lastScannedAt = 0;
 
       QrScanner.WORKER_PATH = "https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner-worker.min.js";
 
@@ -530,7 +521,7 @@
           } else {
             await searchBoxViaAppsScript(trimmed, myToken);
           }
-        } {
+        } finally {
           if (myToken === searchToken) setSearchBusy(false);
         }
       }
@@ -736,13 +727,24 @@
       async function openCamera() {
         document.getElementById("scanIdle").style.display = "none";
         document.getElementById("scanResult").style.display = "none";
+        document.getElementById("scanResult").innerHTML = ""; // เคลียร์ข้อมูลเก่าทิ้งทันที ไม่ให้ค้างอยู่เบื้องหลัง
         document.getElementById("scanCamera").style.display = "block";
 
         try {
           const video = document.getElementById("video");
           qrScanner = new QrScanner(
             video,
-            result => { searchBox(result.data); },
+            result => {
+              // กันเด้งผลซ้ำถ้ายังเป็นกล่องเดิมที่เพิ่งสแกนไป (เผื่อกล่องยังไม่ทันขยับออกจากกล้อง)
+              const norm = normalizeCode(result.data);
+              const now = Date.now();
+              if (norm === lastScannedNorm && (now - lastScannedAt) < 2500) {
+                return;
+              }
+              lastScannedNorm = norm;
+              lastScannedAt = now;
+              searchBox(result.data);
+            },
             {
               onDecodeError: () => { },
               preferredCamera: "environment",
