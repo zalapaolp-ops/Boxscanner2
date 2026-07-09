@@ -2,1747 +2,813 @@
 <html lang="th">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
-<title>หาตะกร้า | Box → Basket Finder</title>
-
-<!-- ✅ PWA: manifest + icons + theme color (ไฟล์จริง อยู่โฟลเดอร์เดียวกัน) -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#173047">
-<link rel="apple-touch-icon" href="icon-192.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="mobile-web-app-capable" content="yes">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner.umd.min.js"></script>
-
-
-<style>
-
-
-:root{
-
---ink:#12202b;
---navy:#173047;
---navy-2:#0e2033;
---paper:#f4f6f8;
---card:#ffffff;
---line:#dfe5ea;
---muted:#5b6b76;
---sea:#1f6fb2;
---sea-soft:#e7f1fb;
---good:#1c8a54;
---good-soft:#e5f6ec;
---bad:#c23b3b;
---bad-soft:#fbeaea;
---radius:16px;
-
-}
-
-
-
-*{
-box-sizing:border-box;
-}
-
-
-html,body{
-
-margin:0;
-padding:0;
-
-}
-
-
-
-body{
-
-font-family:'Sarabun',system-ui,sans-serif;
-
-background:var(--paper);
-
-color:var(--ink);
-
-min-height:100vh;
-
--webkit-tap-highlight-color:transparent;
-
-}
-
-
-
-.mono{
-
-font-family:'JetBrains Mono',monospace;
-
-}
-
-
-
-#app{
-
-max-width:520px;
-
-margin:auto;
-
-min-height:100vh;
-
-background:var(--paper);
-
-display:flex;
-
-flex-direction:column;
-
-}
-
-
-
-/* TOP BAR */
-
-
-header.topbar{
-
-background:linear-gradient(
-155deg,
-var(--navy),
-var(--navy-2)
-);
-
-color:#fff;
-
-padding:18px;
-
-position:sticky;
-
-top:0;
-
-z-index:20;
-
-}
-
-
-
-header.topbar .row1{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-}
-
-
-
-header.topbar h1{
-
-font-size:17px;
-
-margin:0;
-
-font-weight:700;
-
-display:flex;
-
-align-items:center;
-
-gap:8px;
-
-}
-
-
-
-.box-emoji{
-
-font-size:20px;
-
-}
-
-
-
-.status-pill{
-
-font-size:11.5px;
-
-color:#cfe0ee;
-
-background:rgba(255,255,255,.08);
-
-border:1px solid rgba(255,255,255,.15);
-
-padding:5px 10px;
-
-border-radius:100px;
-
-display:flex;
-
-align-items:center;
-
-gap:6px;
-
-}
-
-
-
-.status-dot{
-
-width:7px;
-
-height:7px;
-
-border-radius:50%;
-
-background:#e05a5a;
-
-}
-
-
-
-.status-dot.ok{
-
-background:#2fbf71;
-
-}
-
-
-
-nav.tabs{
-
-display:flex;
-
-gap:6px;
-
-margin-top:14px;
-
-background:rgba(255,255,255,.08);
-
-padding:4px;
-
-border-radius:12px;
-
-}
-
-
-
-nav.tabs button{
-
-flex:1;
-
-border:none;
-
-background:transparent;
-
-color:#cfe0ee;
-
-font-family:inherit;
-
-font-size:13.5px;
-
-font-weight:600;
-
-padding:9px;
-
-border-radius:9px;
-
-}
-
-
-
-nav.tabs button.active{
-
-background:#fff;
-
-color:var(--navy);
-
-}
-
-
-
-/* MAIN */
-
-
-main{
-
-flex:1;
-
-padding:16px 16px 40px;
-
-}
-
-
-
-section{
-
-display:none;
-
-}
-
-
-
-section.active{
-
-display:block;
-
-}
-
-
-
-.card{
-
-background:#fff;
-
-border:1px solid var(--line);
-
-border-radius:var(--radius);
-
-padding:18px;
-
-}
-
-
-
-.card+.card{
-
-margin-top:14px;
-
-}
-
-
-
-.scan-hero{
-
-text-align:center;
-
-padding:26px 18px;
-
-}
-
-
-
-.icon-wrap{
-
-width:84px;
-
-height:84px;
-
-margin:auto;
-
-border-radius:22px;
-
-background:var(--sea-soft);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:38px;
-
-}
-
-
-
-.scan-hero h2{
-
-font-size:16px;
-
-}
-
-
-
-.scan-hero p{
-
-font-size:12.5px;
-
-color:var(--muted);
-
-}
-
-
-
-.btn{
-
-display:inline-flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:8px;
-
-font-family:inherit;
-
-font-weight:700;
-
-font-size:14.5px;
-
-border-radius:12px;
-
-border:none;
-
-cursor:pointer;
-
-padding:13px 18px;
-
-width:100%;
-
-transition:transform .08s ease;
-
-}
-
-
-/* ✅ ภาพเคลื่อนไหวตอนกด (feedback ชัดเจนสำหรับทุกเครื่อง รวม iPhone ที่ไม่รองรับการสั่นจากเว็บ) */
-.btn:active{
-
-transform:scale(0.96);
-
-}
-
-
-
-.btn-primary{
-
-background:var(--navy);
-
-color:white;
-
-}
-
-
-
-.btn-secondary{
-
-background:white;
-
-color:var(--navy);
-
-border:1.5px solid var(--line);
-
-}
-
-.divider-or{
-display:flex;
-align-items:center;
-gap:10px;
-margin:16px 0;
-color:var(--muted);
-font-size:11.5px;
-}
-
-.divider-or::before,
-.divider-or::after{
-content:"";
-flex:1;
-height:1px;
-background:var(--line);
-}
-
-
-.manual-field label{
-font-size:12px;
-font-weight:600;
-color:var(--muted);
-display:block;
-margin-bottom:6px;
-}
-
-
-.manual-input-row{
-display:flex;
-gap:8px;
-}
-
-
-.code-input{
-flex:1;
-border:1.5px solid var(--line);
-border-radius:11px;
-padding:12px;
-font-family:'JetBrains Mono',monospace;
-font-size:15px;
-font-weight:700;
-}
-
-
-.code-input:focus{
-outline:none;
-border-color:var(--sea);
-}
-
-
-.manual-hint{
-font-size:11px;
-color:var(--muted);
-margin-top:7px;
-}
-
-
-.cam-wrap{
-position:relative;
-border-radius:16px;
-overflow:hidden;
-background:#000;
-aspect-ratio:1/1;
-}
-
-
-.cam-wrap video{
-
-width:100%;
-height:100%;
-object-fit:cover;
-
-}
-
-
-.cam-frame{
-
-position:absolute;
-inset:10%;
-border:3px solid white;
-border-radius:18px;
-
-}
-
-
-.cam-hint{
-
-position:absolute;
-bottom:10px;
-left:0;
-right:0;
-margin:auto;
-
-width:max-content;
-
-background:rgba(0,0,0,.4);
-
-color:white;
-
-padding:6px 12px;
-
-border-radius:50px;
-
-font-size:12px;
-
-}
-
-
-.cam-close{
-
-position:absolute;
-
-top:10px;
-
-right:10px;
-
-border:none;
-
-background:rgba(0,0,0,.5);
-
-color:white;
-
-width:35px;
-
-height:35px;
-
-border-radius:50%;
-
-}
-
-
-
-.result-card{
-
-background:white;
-
-border-radius:16px;
-
-border:1px solid var(--line);
-
-overflow:hidden;
-
-}
-
-
-
-.result-top{
-
-padding:16px;
-
-display:flex;
-
-justify-content:space-between;
-
-}
-
-
-
-.result-top.found{
-
-background:var(--good-soft);
-
-}
-
-
-
-.result-top.notfound{
-
-background:var(--bad-soft);
-
-}
-
-
-
-.badge{
-
-padding:5px 10px;
-
-border-radius:50px;
-
-font-size:12px;
-
-font-weight:700;
-
-}
-
-
-
-.badge.found{
-
-background:#c8ecd8;
-
-color:var(--good);
-
-}
-
-
-
-.badge.notfound{
-
-background:#f6cfcf;
-
-color:var(--bad);
-
-}
-
-
-
-.basket-hero{
-
-text-align:center;
-
-padding:20px;
-
-}
-
-
-
-.basket-hero .label{
-
-color:var(--muted);
-
-font-size:12px;
-
-}
-
-
-
-.basket-hero .num{
-
-font-size:52px;
-
-font-weight:700;
-
-color:var(--navy);
-
-}
-
-
-
-.detail-list{
-
-padding:10px 18px;
-
-}
-
-
-
-.detail-row{
-
-display:flex;
-
-justify-content:space-between;
-
-padding:10px 0;
-
-border-bottom:1px dashed var(--line);
-
-font-size:13px;
-
-}
-
-
-
-.detail-row .k{
-
-color:var(--muted);
-
-}
-
-
-
-.detail-row .v{
-
-font-weight:600;
-
-text-align:right;
-
-}
-
-
-
-.result-actions{
-
-padding:15px;
-
-display:flex;
-
-gap:10px;
-
-}
-
-
-
-.toast{
-
-position:fixed;
-
-bottom:22px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-background:#12202b;
-
-color:white;
-
-padding:12px 18px;
-
-border-radius:50px;
-
-opacity:0;
-
-pointer-events:none;
-
-transition:.2s;
-
-z-index:100;
-
-}
-
-
-.toast.show{
-
-opacity:1;
-
-}
-
-
-
-.toast.error{
-
-background:#c23b3b;
-
-}
-
-
-/* ✅ Dark mode: ตามการตั้งค่าเครื่อง (ใช้บ่อยตอนกลางคืนในโกดัง) */
-@media (prefers-color-scheme: dark){
-:root{
---ink:#e8edf1;
---paper:#0f1720;
---card:#182430;
---line:#2a3946;
---muted:#8a9aa8;
---sea-soft:#152736;
---good-soft:#0f2a1d;
---bad-soft:#2e1414;
-}
-.code-input{
-background:#101a24;
-color:var(--ink);
-}
-}
-
-
-/* ✅ เคารพการตั้งค่า "ลดการเคลื่อนไหว" ของผู้ใช้ (accessibility) */
-@media (prefers-reduced-motion: reduce){
-*{
-transition-duration:0.01ms !important;
-animation-duration:0.01ms !important;
-}
-}
-
-
-/* ✅ ปุ่มตอนกำลังทำงาน (ค้นหา/เปิดกล้อง) กันกดซ้ำ + บอกสถานะชัดเจน */
-.btn:disabled{
-opacity:.6;
-cursor:not-allowed;
-transform:none !important;
-}
-
-
-/* ✅ แถบแจ้งเตือนออฟไลน์ */
-.offline-banner{
-position:fixed;
-top:0;
-left:0;
-right:0;
-background:#c23b3b;
-color:#fff;
-text-align:center;
-font-size:12.5px;
-font-weight:600;
-padding:8px 12px;
-z-index:200;
-transform:translateY(-100%);
-transition:transform .25s ease;
-}
-
-.offline-banner.show{
-transform:translateY(0);
-}
-
-
-/* ✅ เผื่อพื้นที่ safe-area สำหรับจอมี notch/gesture bar (iPhone รุ่นใหม่ๆ) */
-#app{
-padding-bottom:env(safe-area-inset-bottom);
-}
-
-header.topbar{
-padding-top:calc(18px + env(safe-area-inset-top));
-}
-
-
-
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>หาตะกร้า | Box → Basket Finder</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B1520">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner.umd.min.js"></script>
+
+  <style>
+    /* ==========================================================================
+       🎨 WORLD-CLASS COLOR PALETTE & DESIGN TOKENS
+       ========================================================================== */
+    :root {
+      --bg-app: #f8fafc;
+      --surface: #ffffff;
+      --surface-raised: #ffffff;
+      --border: #e2e8f0;
+      --border-focus: #4f46e5;
+      
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-inverse: #ffffff;
+      
+      --primary: #0f172a;
+      --primary-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      --accent: #4f46e5;
+      --accent-soft: #eeecfd;
+      
+      --good: #10b981;
+      --good-soft: #f0fdf4;
+      --bad: #ef4444;
+      --bad-soft: #fef2f2;
+      
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 28px;
+      --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 8px -1px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    /* 🌙 AUTOMATIC DARK MODE PRO PRESET */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-app: #080e16;
+        --surface: #111b27;
+        --surface-raised: #172434;
+        --border: #203044;
+        --border-focus: #818cf8;
+        
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        
+        --primary: #ffffff;
+        --primary-gradient: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+        --accent: #818cf8;
+        --accent-soft: rgba(129, 140, 248, 0.15);
+        
+        --good: #34d399;
+        --good-soft: rgba(52, 211, 153, 0.1);
+        --bad: #f87171;
+        --bad-soft: rgba(248, 113, 113, 0.1);
+        --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* ==========================================================================
+       🧱 BASE RESETS
+       ========================================================================== */
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    html, body { margin: 0; padding: 0; background: var(--bg-app); color: var(--text-main); font-family: 'Sarabun', system-ui, sans-serif; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    #app {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--bg-app);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 40px rgba(0,0,0,0.03);
+      position: relative;
+    }
+
+    /* ==========================================================================
+       👑 HEADER / TOPBAR
+       ========================================================================== */
+    header.topbar {
+      background: rgba(248, 250, 252, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 20px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+    @media (prefers-color-scheme: dark) {
+      header.topbar { background: rgba(8, 14, 22, 0.8); }
+    }
+
+    header.topbar .row1 { display: flex; align-items: center; justify-content: space-between; }
+    header.topbar h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.5px;
+    }
+    .box-emoji { font-size: 24px; transform: translateY(-1px); }
+
+    .status-pill {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: var(--shadow-sm);
+    }
+    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--bad); }
+    .status-dot.ok { background: var(--good); box-shadow: 0 0 8px var(--good); }
+
+    /* ==========================================================================
+       📦 MAIN CONTENT & LAYOUT CARDS
+       ========================================================================== */
+    main { flex: 1; padding: 24px 24px 40px; display: flex; flex-direction: column; }
+    section { display: none; width: 100%; height: 100%; }
+    section.active { display: flex; flex-direction: column; gap: 20px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* HERO STYLING */
+    .scan-hero { text-align: center; padding: 40px 24px 30px; }
+    .icon-wrap {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      border-radius: var(--radius-lg);
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      box-shadow: inset 0 0 20px rgba(79, 70, 229, 0.05);
+    }
+    .scan-hero h2 { font-size: 22px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.5px; }
+    .scan-hero p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+    /* ==========================================================================
+       🔘 BUTTONS & CONTROLS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      padding: 16px 24px;
+      width: 100%;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn:active { transform: scale(0.97); }
+
+    .btn-primary {
+      background: var(--primary-gradient);
+      color: var(--surface);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    }
+    @media (prefers-color-scheme: dark) {
+      .btn-primary { color: #000; font-weight: 700; }
+    }
+
+    .btn-secondary {
+      background: var(--surface-raised);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-secondary:hover { background: var(--bg-app); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
+
+    /* DECORATIVE DIVIDER */
+    .divider-or {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 24px 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .divider-or::before, .divider-or::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+    /* MANUAL INPUT */
+    .manual-field label { font-size: 13px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 8px; letter-spacing: 0.5px; }
+    .manual-input-row { display: flex; gap: 10px; }
+    
+    .code-input {
+      flex: 1;
+      border: 1.5px solid var(--border);
+      background: var(--surface-raised);
+      color: var(--text-main);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+    .code-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+    .code-input::placeholder { color: var(--text-muted); opacity: 0.6; }
+
+    /* ==========================================================================
+       📷 IMMERSIVE CAMERA SCANNER UI
+       ========================================================================== */
+    #scanCamera { display: none; width: 100%; margin-top: 10px; }
+    .cam-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 1/1;
+      box-shadow: var(--shadow-lg);
+    }
+    .cam-wrap video { width: 100%; height: 100%; object-fit: cover; }
+
+    .cam-frame {
+      position: absolute;
+      inset: 15%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 24px;
+      box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+    .cam-frame::before, .cam-frame::after {
+      content: ''; position: absolute; width: 24px; height: 24px; border-color: #fff; border-style: solid; border-width: 0;
+    }
+    .cam-frame::before { top: -2px; left: -2px; border-top-width: 4px; border-left-width: 4px; border-top-left-radius: 12px; }
+    .cam-frame::after { bottom: -2px; right: -2px; border-bottom-width: 4px; border-right-width: 4px; border-bottom-right-radius: 12px; }
+
+    .cam-hint {
+      position: absolute;
+      bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      color: white; padding: 8px 18px; border-radius: 100px;
+      font-size: 13px; font-weight: 600; text-align: center; pointer-events: none;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cam-close {
+      position: absolute; top: 16px; right: 16px; border: none;
+      background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);
+      color: white; width: 40px; height: 40px; border-radius: 50%;
+      font-size: 16px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ==========================================================================
+       📊 RESULTS & DATA PRESENTATION
+       ========================================================================== */
+    #scanResult { display: none; width: 100%; }
+    .result-card { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-lg); }
+    
+    .result-top { padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .result-top.found { background: var(--good-soft); border-bottom: 1px solid var(--border); }
+    .result-top.notfound { background: var(--bad-soft); border-bottom: 1px solid var(--border); }
+
+    .badge { padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
+    .badge.found { background: var(--good); color: #fff; }
+    .badge.notfound { background: var(--bad); color: #fff; }
+
+    .basket-hero { text-align: center; padding: 36px 24px; background: linear-gradient(180deg, var(--surface) 0%, var(--bg-app) 100%); }
+    .basket-hero .label { color: var(--text-muted); font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
+    .basket-hero .num { font-size: 64px; font-weight: 800; color: var(--accent); font-family: 'JetBrains Mono', monospace; letter-spacing: -2px; line-height: 1; }
+    .basket-hero p { font-size: 15px; color: var(--text-muted); margin: 12px 0 0; }
+
+    .detail-list { padding: 12px 24px; background: var(--surface); }
+    .detail-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-row .k { color: var(--text-muted); font-weight: 500; }
+    .detail-row .v { font-weight: 700; color: var(--text-main); text-align: right; }
+
+    .result-actions { padding: 24px; display: flex; gap: 12px; background: var(--surface); border-top: 1px solid var(--border); }
+
+    /* ==========================================================================
+       🕒 SCAN HISTORY COMPONENT
+       ========================================================================== */
+    .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .history-header h3 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: -0.3px; }
+    .btn-clear-history { background: none; border: none; color: var(--text-muted); font-size: 13px; font-weight: 600; cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: all 0.2s; }
+    .btn-clear-history:hover { color: var(--bad); background: var(--bad-soft); }
+
+    .history-list { display: flex; flex-direction: column; gap: 10px; max-height: 320px; overflow-y: auto; padding-right: 4px; }
+    .history-list::-webkit-scrollbar { width: 5px; }
+    .history-list::-webkit-scrollbar-track { background: transparent; }
+    .history-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+    .history-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-sm); transition: transform 0.15s; cursor: pointer; }
+    .history-item:active { transform: scale(0.98); }
+    .history-left { display: flex; align-items: center; gap: 12px; }
+    
+    .history-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: bold; }
+    .history-icon.success { background: var(--good-soft); color: var(--good); }
+    .history-icon.fail { background: var(--bad-soft); color: var(--bad); }
+
+    .history-info { display: flex; flex-direction: column; gap: 2px; }
+    .history-box-no { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--text-main); }
+    .history-time { font-size: 11px; color: var(--text-muted); }
+    .history-right { text-align: right; }
+    .history-tray { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 800; color: var(--accent); }
+    .history-status-text { font-size: 11px; font-weight: 600; color: var(--text-muted); }
+    .history-empty { text-align: center; padding: 30px 0; color: var(--text-muted); font-size: 13px; }
+    .history-empty-icon { font-size: 28px; margin-bottom: 8px; opacity: 0.5; }
+
+    /* ==========================================================================
+       🚨 TOASTS & OFFLINE NOTIFICATIONS
+       ========================================================================== */
+    .toast {
+      position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(20px);
+      background: #0f172a; color: white; padding: 14px 28px; border-radius: 100px;
+      font-size: 14px; font-weight: 600; box-shadow: var(--shadow-lg);
+      opacity: 0; pointer-events: none; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 1000;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .toast.error { background: var(--bad); }
+
+    .offline-banner {
+      position: fixed; top: 0; left: 0; right: 0; background: var(--bad); color: white;
+      text-align: center; font-size: 13px; font-weight: 700; padding: 10px 16px; z-index: 2000;
+      transform: translateY(-100%); transition: transform 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
+    }
+    .offline-banner.show { transform: translateY(0); }
+
+    #app { padding-bottom: env(safe-area-inset-bottom); }
+    header.topbar { padding-top: calc(20px + env(safe-area-inset-top)); }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+  </style>
 </head>
-
 
 <body>
 
-<div id="offlineBanner" class="offline-banner">📡 ขาดการเชื่อมต่ออินเทอร์เน็ต — ผลค้นหาอาจไม่เป็นปัจจุบัน</div>
-
-<div id="app">
-
-
-<header class="topbar">
-
-
-<div class="row1">
-
-
-<h1>
-<span class="box-emoji">📦</span>
-หาตะกร้า
-</h1>
-
-
-<div class="status-pill">
-
-<span class="status-dot" id="statusDot"></span>
-
-<span id="statusText">
-DATABASE
-</span>
-
-</div>
-
-
-</div>
-
-
-
-<nav class="tabs">
-
-<button class="active">
-สแกนหากล่อง
-</button>
-
-
-</nav>
-
-
-</header>
-
-
-
-
-<main>
-
-
-<section id="tab-scan" class="active">
-
-
-
-<div id="scanIdle">
-
-
-<div class="card scan-hero">
-
-
-<div class="icon-wrap">
-📷
-</div>
-
-
-<h2>
-สแกน QR BOX_NO
-</h2>
-
-
-<p>
-ยิง QR หรือพิมพ์รหัสกล่องเพื่อค้นหาตะกร้า
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<button class="btn btn-primary" id="btnOpenCam">
-
-📷 เริ่มสแกนด้วยกล้อง
-
-</button>
-
-
-
-<div class="divider-or">
-หรือ
-</div>
-
-
-
-
-<div class="manual-field">
-
-
-<label for="manualInput">
-BOX_NO
-</label>
-
-
-
-<div class="manual-input-row">
-
-
-<input
-
-id="manualInput"
-
-class="code-input"
-
-autocomplete="off"
-
-autocapitalize="characters"
-
-inputmode="text"
-
-placeholder="เช่น BOX001">
-
-
-<button
-
-id="btnManualSearch"
-
-class="btn btn-secondary"
-
-style="width:auto">
-
-ค้นหา
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div id="scanCamera" style="display:none">
-
-
-<div class="cam-wrap">
-
-
-<video id="video" autoplay playsinline muted></video>
-
-
-<div class="cam-frame"></div>
-
-
-<div class="cam-hint">
-
-เล็ง QR ให้อยู่ในกรอบ
-
-</div>
-
-
-<button id="btnCloseCam" class="cam-close">
-
-✕
-
-</button>
-
-
-<button id="btnTorch" class="cam-close" style="right:55px;display:none">
-
-💡
-
-</button>
-
-
-</div>
-
-
-<canvas id="canvas" style="display:none"></canvas>
-
-
-</div>
-
-
-
-
-<div id="scanResult" style="display:none" aria-live="polite"></div>
-
-
-
-
-</section>
-
-
-</main>
-
-
-</div>
-
-
-
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script>
-
-(function(){
-
-"use strict";
-
-// ⚠️ แก้ URL นี้ให้เป็น URL ของ Apps Script Web App ที่คุณ Deploy ไว้
-// (หน้าตาแบบ: https://script.google.com/macros/s/xxxxxxx/exec)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3UvwvBumX3Gx4Sp3FaD5fJnB2_b_0cBGdlGr8UxnxfHuRdX5pp2bH-CrxeTJ7VBV4/exec";
-
-let qrScanner = null;
-
-// ✅ qr-scanner (nimiq/qr-scanner) — ไลบรารีสแกน QR ที่ใช้กันแพร่หลายทั่วโลก
-// ในโปรดักชันจริงหลายพันโปรเจกต์ ทำงานผ่าน Web Worker แยกจาก main thread
-// (UI ไม่กระตุกระหว่างสแกน) มีระบบเลือกความละเอียด/scan-region และการ
-// ตรวจจับ flash/torch ในตัวอยู่แล้ว ไม่ต้องเขียน loop สแกนเองอีกต่อไป
-// ต้องตั้ง WORKER_PATH ให้ตรงกับเวอร์ชันที่โหลดมา (ดู <script> ใน <head>)
-QrScanner.WORKER_PATH = "https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner-worker.min.js";
-
-
-// =====================
-// ✅ Security: escape ข้อมูลก่อนแทรกลง innerHTML เสมอ
-// ป้องกัน XSS หากมีคนพิมพ์ <script> หรือ HTML แปลกๆ ไว้ในคอลัมน์ Sheet (เช่น NOTE)
-// =====================
-const HTML_ESCAPE_MAP = { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" };
-
-function esc(value){
-const str = (value === null || value === undefined || value === "") ? "-" : String(value);
-return str.replace(/[&<>"']/g, ch => HTML_ESCAPE_MAP[ch]);
-}
-
-
-// =====================
-// ✅ Haptic feedback: สั่นเบาๆ ยืนยันว่า "กดติดแล้ว" (Android รองรับ, iOS Safari ไม่รองรับ — ไม่ error แค่เงียบ)
-// =====================
-function vibrate(pattern){
-try{
-if(navigator.vibrate) navigator.vibrate(pattern);
-}catch(e){
-// เงียบไว้ ไม่กระทบการทำงานหลัก
-}
-}
-
-
-// =====================
-// ✅ Offline detection: เตือนผู้ใช้ทันทีถ้าเน็ตหลุด (สำคัญมากในโกดังที่ WiFi ไม่เสถียร)
-// =====================
-const offlineBanner = document.getElementById("offlineBanner");
-
-function updateOnlineStatus(){
-offlineBanner.classList.toggle("show", !navigator.onLine);
-}
-
-window.addEventListener("online", updateOnlineStatus);
-window.addEventListener("offline", updateOnlineStatus);
-updateOnlineStatus();
-
-
-
-// =====================
-// Toast
-// =====================
-
-function toast(msg,type){
-
-const t=document.getElementById("toast");
-
-t.textContent=msg;
-
-t.className="toast show "+(type||"");
-
-
-clearTimeout(window.toastTimer);
-
-window.toastTimer=setTimeout(()=>{
-
-t.className="toast";
-
-},2500);
-
-}
-
-
-
-
-// =====================
-// ✅ Local database.json: โหลดครั้งเดียวไว้ในเครื่อง ค้นหาแบบ instant (ไม่ผ่านเครือข่ายเลย)
-// ถ้าไฟล์นี้ไม่มี/โหลดไม่สำเร็จ -> fallback ไปเรียก Apps Script (JSONP) แบบเดิมอัตโนมัติ
-// =====================
-
-let DB_DATA = null;
-let DB_UPDATED_AT = null;
-
-async function loadDatabase(force){
-try{
-const url = "database.json" + (force ? ("?t=" + Date.now()) : "");
-const res = await fetch(url, { cache: force ? "no-store" : "default" });
-if(!res.ok) throw new Error("HTTP " + res.status);
-
-DB_DATA = await res.json();
-DB_UPDATED_AT = new Date();
-
-setStatus(true, "DATABASE");
-}catch(e){
-console.log("โหลด database.json ไม่สำเร็จ จะใช้ Apps Script แทนตอนค้นหา:", e);
-DB_DATA = null;
-setStatus(false, "DATABASE (fallback)");
-}
-}
-
-function setStatus(ok, label){
-document.getElementById("statusDot").classList.toggle("ok", ok);
-document.getElementById("statusText").textContent = label;
-}
-
-// โหลดทันทีตอนเปิดหน้า แล้วรีเฟรชเป็นระยะ เผื่อเปิดแอปค้างไว้นาน
-loadDatabase(false);
-setInterval(()=>loadDatabase(true), 5*60*1000);
-
-// รีเฟรชทันทีเมื่อผู้ใช้กลับมาเปิดแท็บ/แอปนี้อีกครั้ง (เผื่อข้อมูลเปลี่ยนระหว่างที่ไม่ได้ใช้งาน)
-document.addEventListener("visibilitychange", ()=>{
-if(document.visibilityState === "visible") loadDatabase(true);
-});
-
-
-
-// =====================
-// Search DATABASE
-// ใช้ database.json ในเครื่องก่อนเสมอ (เร็วสุด) ถ้าไม่มี -> fallback Apps Script
-// =====================
-
-let searchToken = 0; // ✅ กัน race condition: ถ้ากดค้นหาซ้ำเร็วๆ ผลลัพธ์เก่าจะถูกทิ้งไม่ให้มาทับผลใหม่
-
-function setSearchBusy(busy){
-const btn = document.getElementById("btnManualSearch");
-if(btn){
-btn.disabled = busy;
-btn.textContent = busy ? "กำลังค้นหา…" : "ค้นหา";
-}
-}
-
-async function searchBox(boxNo){
-
-const trimmed = (boxNo || "").trim();
-
-if(!trimmed){
-toast("กรุณาใส่ BOX_NO","error");
-return;
-}
-
-// ✅ สั่นสั้นๆ ทันทีตอนเริ่มค้นหาจริง ยืนยันว่า "กดติดแล้ว"
-vibrate(15);
-
-const myToken = ++searchToken;
-setSearchBusy(true);
-
-try{
-if(DB_DATA){
-searchBoxLocal(trimmed, myToken);
-}else{
-await searchBoxViaAppsScript(trimmed, myToken);
-}
-}finally{
-if(myToken === searchToken) setSearchBusy(false);
-}
-
-}
-
-
-
-function normalizeCode(v){
-return String(v).trim().toUpperCase().replace(/\s+/g,"");
-}
-
-
-function searchBoxLocal(boxNo, myToken){
-
-const search = normalizeCode(boxNo);
-
-const row = DB_DATA.find(r => normalizeCode(r.boxNo) === search);
-
-if(myToken !== searchToken) return; // มีการค้นหาใหม่แซงไปแล้ว ทิ้งผลลัพธ์นี้
-
-if(row){
-showResult({
-found: true,
-type: row.type,
-boxNo: row.boxNo,
-itemCode: row.itemCode,
-itemName: row.itemName,
-qty: row.qty,
-tray: row.tray,
-note: row.note
-}, boxNo);
-}else{
-showResult({ found:false }, boxNo);
-}
-
-}
-
-
-
-// Fallback: เรียกผ่าน JSONP ไปยัง Apps Script API (ใช้เฉพาะตอนโหลด database.json ไม่สำเร็จ)
-function searchBoxViaAppsScript(boxNo, myToken){
-
-return new Promise((resolve)=>{
-
-if(SCRIPT_URL.indexOf("PUT_YOUR_DEPLOYMENT_ID_HERE") !== -1){
-toast("ยังไม่ได้ตั้งค่า SCRIPT_URL ในโค้ด","error");
-resolve();
-return;
-}
-
-const callbackName = "jsonpCallback_" + Date.now() + "_" + myToken;
-const script = document.createElement("script");
-
-let done = false;
-
-const timeout = setTimeout(()=>{
-if(!done){
-done = true;
-if(myToken === searchToken){
-toast("เชื่อมต่อ DATABASE ไม่ได้ (timeout)","error");
-}
-cleanup();
-resolve();
-}
-}, 10000);
-
-function cleanup(){
-delete window[callbackName];
-if(script.parentNode) script.parentNode.removeChild(script);
-}
-
-window[callbackName] = function(data){
-if(done) return;
-done = true;
-clearTimeout(timeout);
-if(myToken === searchToken){
-showResult(data,boxNo);
-}
-cleanup();
-resolve();
-};
-
-script.onerror = function(){
-if(done) return;
-done = true;
-clearTimeout(timeout);
-if(myToken === searchToken){
-toast("เชื่อมต่อ DATABASE ไม่ได้","error");
-}
-cleanup();
-resolve();
-};
-
-script.src = SCRIPT_URL
-+ "?boxNo=" + encodeURIComponent(boxNo)
-+ "&callback=" + callbackName;
-
-document.body.appendChild(script);
-
-});
-
-}
-
-
-
-
-
-// =====================
-// Show Result
-// =====================
-
-function showResult(data,code){
-
-
-const result=document.getElementById("scanResult");
-
-
-document.getElementById("scanIdle").style.display="none";
-
-
-stopCamera();
-
-
-result.style.display="block";
-
-
-// ✅ สั่นแยกความรู้สึก: พบข้อมูล = สั่นครั้งเดียว, ไม่พบ = สั่น 2 จังหวะสั้นๆ (แจ้งเตือน)
-vibrate(data.found ? 60 : [40,80,40]);
-
-
-if(data.found){
-
-
-result.innerHTML=`
-
-<div class="result-card">
-
-
-<div class="result-top found">
-
-
-<span class="badge found">
-พบข้อมูล ✓
-</span>
-
-
-<span class="badge">
-${esc(data.type)}
-</span>
-
-
-</div>
-
-
-
-<div class="basket-hero">
-
-
-<div class="label">
-TRAY
-</div>
-
-
-<div class="num">
-#${esc(data.tray)}
-</div>
-
-
-</div>
-
-
-
-
-<div class="detail-list">
-
-
-${row("BOX_NO",data.boxNo)}
-
-${row("ITEM_CODE",data.itemCode)}
-
-${row("ITEM_NAME",data.itemName)}
-
-${row("QTY",data.qty)}
-
-${row("NOTE",data.note)}
-
-
-</div>
-
-
-
-<div class="result-actions">
-
-
-<button class="btn btn-secondary" id="again">
-
-ค้นหาใหม่
-
-</button>
-
-
-<button class="btn btn-primary" id="scanAgain">
-
-📷 สแกนต่อ
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-`;
-
-
-
-}else{
-
-
-result.innerHTML=`
-
-<div class="result-card">
-
-
-<div class="result-top notfound">
-
-
-<span class="badge notfound">
-ไม่พบข้อมูล
-</span>
-
-
-</div>
-
-
-
-<div class="basket-hero">
-
-
-<div class="label">
-BOX_NO
-</div>
-
-
-<div class="num">
-${esc(code)}
-</div>
-
-
-<p>
-ไม่มีรหัสนี้ใน DATABASE
-</p>
-
-
-</div>
-
-
-</div>
-
-`;
-
-
-}
-
-
-
-document.getElementById("again")?.addEventListener("click",()=>{
-
-
-result.style.display="none";
-
-document.getElementById("scanIdle").style.display="block";
-
-document.getElementById("manualInput").value="";
-
-document.getElementById("manualInput").focus();
-
-
-});
-
-
-
-document.getElementById("scanAgain")?.addEventListener("click",openCamera);
-
-
-
-}
-
-
-
-
-
-function row(k,v){
-
-
-return `
-
-<div class="detail-row">
-
-<span class="k">${esc(k)}</span>
-
-<span class="v">
-${esc(v)}
-</span>
-
-
-</div>
-
-`;
-
-}
-
-
-
-
-// =====================
-// Manual Input
-// =====================
-
-
-document
-.getElementById("btnManualSearch")
-.addEventListener("click",()=>{
-
-
-searchBox(
-
-document.getElementById("manualInput").value
-
-);
-
-
-});
-
-
-
-
-document
-.getElementById("manualInput")
-.addEventListener("keydown",(e)=>{
-
-
-if(e.key==="Enter"){
-
-searchBox(e.target.value);
-
-}
-
-
-});
-
-
-
-
-// =====================
-// Camera (ผ่าน qr-scanner ทั้งหมด — ไม่มี loop สแกนเขียนเองแล้ว)
-// =====================
-
-
-async function openCamera(){
-
-
-document.getElementById("scanIdle").style.display="none";
-
-document.getElementById("scanCamera").style.display="block";
-
-
-
-try{
-
-
-const video = document.getElementById("video");
-
-// qr-scanner จัดการ getUserMedia, เลือกกล้องหลัง, ตั้งความละเอียด,
-// และ scan-region ที่เหมาะสมให้เองทั้งหมด ไม่ต้องตั้ง constraints เอง
-qrScanner = new QrScanner(
-video,
-result => {
-searchBox(result.data);
-},
-{
-onDecodeError: () => {
-// ไม่เจอ QR ในเฟรมนี้ เป็นเรื่องปกติมากระหว่างเล็งกล้อง ไม่ต้องแจ้งเตือน
-},
-preferredCamera: "environment",
-highlightScanRegion: true,
-highlightCodeOutline: true,
-maxScansPerSecond: 25
-}
-);
-
-await qrScanner.start();
-
-
-// เช็คว่ากล้องรองรับไฟฉาย (torch) ไหม เพื่อช่วยส่องตอนสแกน QR ระยะใกล้
-try{
-const hasFlash = await qrScanner.hasFlash();
-document.getElementById("btnTorch").style.display = hasFlash ? "flex" : "none";
-}catch(torchErr){
-console.log("Torch check failed:", torchErr);
-document.getElementById("btnTorch").style.display = "none";
-}
-
-
-}catch(e){
-
-
-console.log(e);
-
-toast(
-"เปิดกล้องไม่ได้: " + e.message,
-"error"
-);
-
-
-document.getElementById("scanCamera").style.display="none";
-document.getElementById("scanIdle").style.display="block";
-
-
-}
-
-}
-
-
-
-
-function stopCamera(){
-
-if(qrScanner){
-qrScanner.stop();
-qrScanner.destroy();
-qrScanner = null;
-}
-
-document.getElementById("btnTorch").style.display="none";
-
-}
-
-
-
-
-function toggleTorch(){
-
-if(!qrScanner) return;
-
-qrScanner.toggleFlash().catch(err=>{
-console.log("Torch toggle failed:", err);
-});
-
-}
-
-
-
-
-// (ฟังก์ชันสแกนถูกแทนที่ด้วย qr-scanner ทั้งหมดแล้ว — ดูฟังก์ชัน openCamera ด้านบน)
-
-
-
-
-document
-.getElementById("btnOpenCam")
-.addEventListener("click",openCamera);
-
-
-
-document
-.getElementById("btnCloseCam")
-.addEventListener("click",()=>{
-
-
-stopCamera();
-
-
-document.getElementById("scanCamera").style.display="none";
-
-document.getElementById("scanIdle").style.display="block";
-
-
-});
-
-
-
-document
-.getElementById("btnTorch")
-.addEventListener("click", toggleTorch);
-
-
-// ✅ หยุดกล้องอัตโนมัติเมื่อผู้ใช้สลับแท็บ/พับแอป (ประหยัดแบต + ความเป็นส่วนตัว)
-// ไม่ปิดหน้ากล้องทั้งหมด แค่หยุดสตรีมชั่วคราว ผู้ใช้กลับมาต้องกดเปิดกล้องใหม่
-document.addEventListener("visibilitychange", ()=>{
-if(document.visibilityState === "hidden" && qrScanner){
-stopCamera();
-document.getElementById("scanCamera").style.display="none";
-document.getElementById("scanIdle").style.display="block";
-}
-});
-
-
-// สถานะ DATABASE ถูกอัปเดตจริงโดย loadDatabase()/setStatus() ด้านบน
-// (เขียว = โหลด database.json สำเร็จ, เทา = fallback ไป Apps Script)
-
-
-})();
-
-
-</script>
-
-<!-- ✅ PWA: register service worker (ไฟล์ sw.js อยู่โฟลเดอร์เดียวกัน) -->
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
-    navigator.serviceWorker.register('sw.js').catch(function (err) {
-      console.log('SW register failed:', err);
-    });
-  });
-}
-</script>
-
+  <div id="offlineBanner" class="offline-banner">📡 ขาดการเชื่อมต่ออินเทอร์เน็ต — ผลค้นหาอาจไม่เป็นปัจจุบัน</div>
+
+  <div id="app">
+    <header class="topbar">
+      <div class="row1">
+        <h1><span class="box-emoji">📦</span> หาตะกร้า</h1>
+        <div class="status-pill">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">DATABASE</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="tab-scan" class="active">
+        
+        <div id="scanIdle" style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="card scan-hero">
+            <div class="icon-wrap">📷</div>
+            <h2>สแกน QR BOX_NO</h2>
+            <p>ยิง QR Code หรือพิมพ์รหัสกล่องด้านล่าง<br>เพื่อค้นหาตะกร้าแบบเรียลไทม์</p>
+          </div>
+
+          <div class="card">
+            <button class="btn btn-primary" id="btnOpenCam">
+              📷 เริ่มสแกนด้วยกล้อง
+            </button>
+
+            <div class="divider-or">หรือพิมพ์รหัสด้วยตนเอง</div>
+
+            <div class="manual-field">
+              <label for="manualInput">BOX_NO</label>
+              <div class="manual-input-row">
+                <input id="manualInput" class="code-input" autocomplete="off" autocapitalize="characters" inputmode="text" placeholder="เช่น BOX001">
+                <button id="btnManualSearch" class="btn btn-secondary" style="width: auto; padding: 0 24px;">ค้นหา</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="history-header">
+              <h3>🕒 ประวัติการสแกนล่าสุด</h3>
+              <button class="btn-clear-history" id="btnClearHistory">ล้างทั้งหมด</button>
+            </div>
+            <div class="history-list" id="historyList">
+              </div>
+          </div>
+        </div>
+
+        <div id="scanCamera">
+          <div class="cam-wrap">
+            <video id="video" autoplay playsinline muted></video>
+            <div class="cam-frame"></div>
+            <div class="cam-hint">จัดให้ QR Code อยู่ในกรอบเหลี่ยม</div>
+            <button id="btnCloseCam" class="cam-close">✕</button>
+            <button id="btnTorch" class="cam-close" style="right: 66px; display: none;">💡</button>
+          </div>
+          <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+
+        <div id="scanResult" aria-live="polite"></div>
+
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3UvwvBumX3Gx4Sp3FaD5fJnB2_b_0cBGdlGr8UxnxfHuRdX5pp2bH-CrxeTJ7VBV4/exec";
+      let qrScanner = null;
+
+      QrScanner.WORKER_PATH = "https://cdn.jsdelivr.net/npm/qr-scanner@1.4.2/qr-scanner-worker.min.js";
+
+      // HTML Escape
+      const HTML_ESCAPE_MAP = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+      function esc(value) {
+        const str = (value === null || value === undefined || value === "") ? "-" : String(value);
+        return str.replace(/[&<>"']/g, ch => HTML_ESCAPE_MAP[ch]);
+      }
+
+      // Haptic Feedback
+      function vibrate(pattern) {
+        try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (e) { }
+      }
+
+      // Offline detection
+      const offlineBanner = document.getElementById("offlineBanner");
+      function updateOnlineStatus() { offlineBanner.classList.toggle("show", !navigator.onLine); }
+      window.addEventListener("online", updateOnlineStatus);
+      window.addEventListener("offline", updateOnlineStatus);
+      updateOnlineStatus();
+
+      // Toast Notification
+      function toast(msg, type) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.className = "toast show " + (type || "");
+        clearTimeout(window.toastTimer);
+        window.toastTimer = setTimeout(() => { t.className = "toast"; }, 2500);
+      }
+
+      // Local Database Loading
+      let DB_DATA = null;
+      async function loadDatabase(force) {
+        try {
+          const url = "database.json" + (force ? ("?t=" + Date.now()) : "");
+          const res = await fetch(url, { cache: force ? "no-store" : "default" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          DB_DATA = await res.json();
+          setStatus(true, "DATABASE");
+        } catch (e) {
+          console.log("โหลด database.json ไม่สำเร็จ ใช้ Apps Script แทน:", e);
+          DB_DATA = null;
+          setStatus(false, "DATABASE (fallback)");
+        }
+      }
+
+      function setStatus(ok, label) {
+        document.getElementById("statusDot").classList.toggle("ok", ok);
+        document.getElementById("statusText").textContent = label;
+      }
+
+      loadDatabase(false);
+      setInterval(() => loadDatabase(true), 5 * 60 * 1000);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") loadDatabase(true);
+      });
+
+      // Search Logic
+      let searchToken = 0;
+      function setSearchBusy(busy) {
+        const btn = document.getElementById("btnManualSearch");
+        if (btn) {
+          btn.disabled = busy;
+          btn.textContent = busy ? "..." : "ค้นหา";
+        }
+      }
+
+      async function searchBox(boxNo) {
+        const trimmed = (boxNo || "").trim();
+        if (!trimmed) {
+          toast("กรุณาใส่ BOX_NO", "error");
+          return;
+        }
+        vibrate(15);
+        const myToken = ++searchToken;
+        setSearchBusy(true);
+        try {
+          if (DB_DATA) {
+            searchBoxLocal(trimmed, myToken);
+          } else {
+            await searchBoxViaAppsScript(trimmed, myToken);
+          }
+        } {
+          if (myToken === searchToken) setSearchBusy(false);
+        }
+      }
+
+      function normalizeCode(v) { return String(v).trim().toUpperCase().replace(/\s+/g, ""); }
+
+      function searchBoxLocal(boxNo, myToken) {
+        const search = normalizeCode(boxNo);
+        const row = DB_DATA.find(r => normalizeCode(r.boxNo) === search);
+        if (myToken !== searchToken) return;
+
+        if (row) {
+          showResult({
+            found: true, type: row.type, boxNo: row.boxNo, itemCode: row.itemCode,
+            itemName: row.itemName, qty: row.qty, tray: row.tray, note: row.note
+          }, boxNo);
+          saveToHistory(row.boxNo, row.tray, true);
+        } else {
+          showResult({ found: false }, boxNo);
+          saveToHistory(boxNo, null, false);
+        }
+      }
+
+      function searchBoxViaAppsScript(boxNo, myToken) {
+        return new Promise((resolve) => {
+          if (SCRIPT_URL.indexOf("PUT_YOUR_DEPLOYMENT_ID_HERE") !== -1) {
+            toast("ยังไม่ได้ตั้งค่า SCRIPT_URL ในโค้ด", "error");
+            resolve();
+            return;
+          }
+          const callbackName = "jsonpCallback_" + Date.now() + "_" + myToken;
+          const script = document.createElement("script");
+          let done = false;
+
+          const timeout = setTimeout(() => {
+            if (!done) {
+              done = true;
+              if (myToken === searchToken) toast("เชื่อมต่อ DATABASE ไม่ได้ (timeout)", "error");
+              cleanup(); resolve();
+            }
+          }, 10000);
+
+          function cleanup() {
+            delete window[callbackName];
+            if (script.parentNode) script.parentNode.removeChild(script);
+          }
+
+          window[callbackName] = function (data) {
+            if (done) return;
+            done = true;
+            clearTimeout(timeout);
+            if (myToken === searchToken) {
+              showResult(data, boxNo);
+              if (data.found) {
+                saveToHistory(data.boxNo, data.tray, true);
+              } else {
+                saveToHistory(boxNo, null, false);
+              }
+            }
+            cleanup(); resolve();
+          };
+
+          script.onerror = function () {
+            if (done) return;
+            done = true;
+            clearTimeout(timeout);
+            if (myToken === searchToken) toast("เชื่อมต่อ DATABASE ไม่ได้", "error");
+            cleanup(); resolve();
+          };
+
+          script.src = SCRIPT_URL + "?boxNo=" + encodeURIComponent(boxNo) + "&callback=" + callbackName;
+          document.body.appendChild(script);
+        });
+      }
+
+      // Display Result
+      function showResult(data, code) {
+        const result = document.getElementById("scanResult");
+        document.getElementById("scanIdle").style.display = "none";
+        stopCamera();
+        result.style.display = "block";
+
+        vibrate(data.found ? 60 : [40, 80, 40]);
+
+        if (data.found) {
+          result.innerHTML = `
+            <div class="result-card">
+              <div class="result-top found">
+                <span class="badge found">พบข้อมูล ✓</span>
+                <span class="badge badge-type">${esc(data.type)}</span>
+              </div>
+              <div class="basket-hero">
+                <div class="label">TRAY</div>
+                <div class="num">#${esc(data.tray)}</div>
+              </div>
+              <div class="detail-list">
+                ${rowHtml("BOX_NO", data.boxNo)}
+                ${rowHtml("ITEM_CODE", data.itemCode)}
+                ${rowHtml("ITEM_NAME", data.itemName)}
+                ${rowHtml("QTY", data.qty)}
+                ${rowHtml("NOTE", data.note)}
+              </div>
+              <div class="result-actions">
+                <button class="btn btn-secondary" id="again">ย้อนกลับ</button>
+                <button class="btn btn-primary" id="scanAgain">📷 สแกนต่อ</button>
+              </div>
+            </div>`;
+        } else {
+          result.innerHTML = `
+            <div class="result-card">
+              <div class="result-top notfound">
+                <span class="badge notfound">ไม่พบข้อมูล</span>
+              </div>
+              <div class="basket-hero">
+                <div class="label">BOX_NO</div>
+                <div class="num" style="font-size:38px; color:var(--bad);">${esc(code)}</div>
+                <p>ไม่มีรหัสนี้ในคลังระบบ DATABASE</p>
+              </div>
+              <div class="result-actions">
+                <button class="btn btn-secondary" id="again" style="width:100%">ย้อนกลับหน้าหลัก</button>
+              </div>
+            </div>`;
+        }
+
+        document.getElementById("again")?.addEventListener("click", () => {
+          result.style.display = "none";
+          document.getElementById("scanIdle").style.display = "flex";
+          document.getElementById("manualInput").value = "";
+          renderHistory();
+        });
+
+        document.getElementById("scanAgain")?.addEventListener("click", openCamera);
+      }
+
+      function rowHtml(k, v) {
+        return `<div class="detail-row"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`;
+      }
+
+      // History Management (Local Storage)
+      function saveToHistory(boxNo, tray, isFound) {
+        let history = JSON.parse(localStorage.getItem('scan_history') || '[]');
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' }) + ' น.';
+        
+        // กรองตัวซ้ำเก่าออกเพื่อย้ายอันล่าสุดขึ้นบนสุด
+        history = history.filter(item => normalizeCode(item.boxNo) !== normalizeCode(boxNo));
+        
+        history.unshift({ boxNo, tray: isFound ? `#${tray}` : 'ไม่พบข้อมูล', time: timeStr, success: isFound });
+        if (history.length > 20) history.pop();
+        localStorage.setItem('scan_history', JSON.stringify(history));
+      }
+
+      function renderHistory() {
+        const listEl = document.getElementById('historyList');
+        let history = JSON.parse(localStorage.getItem('scan_history') || '[]');
+
+        if (history.length === 0) {
+          listEl.innerHTML = `<div class="history-empty"><div class="history-empty-icon">📂</div>ไม่มีประวัติการสแกนล่าสุด</div>`;
+          return;
+        }
+
+        listEl.innerHTML = history.map(item => `
+          <div class="history-item" data-code="${esc(item.boxNo)}">
+            <div class="history-left">
+              <div class="history-icon ${item.success ? 'success' : 'fail'}">${item.success ? '✓' : '✕'}</div>
+              <div class="history-info">
+                <span class="history-box-no">${esc(item.boxNo)}</span>
+                <span class="history-time">${item.time}</span>
+              </div>
+            </div>
+            <div class="history-right">
+              <span class="history-tray" style="${!item.success ? 'color: var(--bad); font-size: 13px;' : ''}">${esc(item.tray)}</span>
+              ${item.success ? '<div class="history-status-text">TRAY</div>' : ''}
+            </div>
+          </div>
+        `).join('');
+
+        // ผูกคลิกเพื่อสืบค้นประวัติย้อนหลังทันทีเมื่อกดเลือกรายการ
+        listEl.querySelectorAll('.history-item').forEach(el => {
+          el.addEventListener('click', () => {
+            const code = el.getAttribute('data-code');
+            document.getElementById('manualInput').value = code;
+            searchBox(code);
+          });
+        });
+      }
+
+      document.getElementById('btnClearHistory').addEventListener('click', () => {
+        localStorage.removeItem('scan_history');
+        renderHistory();
+        toast("ล้างประวัติเรียบร้อยแล้ว");
+      });
+
+      // Manual Input Trigger
+      document.getElementById("btnManualSearch").addEventListener("click", () => {
+        searchBox(document.getElementById("manualInput").value);
+      });
+      document.getElementById("manualInput").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") searchBox(e.target.value);
+      });
+
+      // Camera Controls
+      async function openCamera() {
+        document.getElementById("scanIdle").style.display = "none";
+        document.getElementById("scanResult").style.display = "none";
+        document.getElementById("scanCamera").style.display = "block";
+
+        try {
+          const video = document.getElementById("video");
+          qrScanner = new QrScanner(
+            video,
+            result => { searchBox(result.data); },
+            {
+              onDecodeError: () => { },
+              preferredCamera: "environment",
+              highlightScanRegion: true,
+              highlightCodeOutline: true,
+              maxScansPerSecond: 25
+            }
+          );
+
+          await qrScanner.start();
+
+          try {
+            const hasFlash = await qrScanner.hasFlash();
+            document.getElementById("btnTorch").style.display = hasFlash ? "flex" : "none";
+          } catch (e) {
+            document.getElementById("btnTorch").style.display = "none";
+          }
+        } catch (e) {
+          console.log(e);
+          toast("เปิดกล้องไม่ได้: " + e.message, "error");
+          document.getElementById("scanCamera").style.display = "none";
+          document.getElementById("scanIdle").style.display = "flex";
+        }
+      }
+
+      function stopCamera() {
+        if (qrScanner) { qrScanner.stop(); qrScanner.destroy(); qrScanner = null; }
+        document.getElementById("btnTorch").style.display = "none";
+      }
+
+      function toggleTorch() {
+        if (qrScanner) qrScanner.toggleFlash().catch(err => console.log("Torch error:", err));
+      }
+
+      document.getElementById("btnOpenCam").addEventListener("click", openCamera);
+      document.getElementById("btnCloseCam").addEventListener("click", () => {
+        stopCamera();
+        document.getElementById("scanCamera").style.display = "none";
+        document.getElementById("scanIdle").style.display = "flex";
+        renderHistory();
+      });
+      document.getElementById("btnTorch").addEventListener("click", toggleTorch);
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden" && qrScanner) {
+          stopCamera();
+          document.getElementById("scanCamera").style.display = "none";
+          document.getElementById("scanIdle").style.display = "flex";
+        }
+      });
+
+      // Initial Render History
+      renderHistory();
+
+    })();
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function (err) {
+          console.log('SW register failed:', err);
+        });
+      });
+    }
+  </script>
 
 </body>
-
 </html>
