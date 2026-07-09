@@ -274,7 +274,7 @@
 
     .cam-frame {
       position: absolute;
-      inset: 11% 12% 24% 12%;
+      inset: 4% 4% 15% 4%;
       border: 2px solid rgba(255, 255, 255, 0.3);
       border-radius: 24px;
       box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.6);
@@ -944,6 +944,38 @@
       // =====================
       // Camera (qr-scanner)
       // =====================
+
+      // คำนวณพื้นที่สแกนจริงให้ตรงกับกรอบสีขาว (.cam-frame) ที่เห็นบนจอ
+      // แทนค่า default ของ qr-scanner ที่สแกนแค่กล่องสี่เหลี่ยมเล็กๆตรงกลาง (2/3 ของด้านที่สั้นกว่า)
+      function calcScanRegionFromFrame(video) {
+        const wrapEl = document.querySelector(".cam-wrap");
+        const frameEl = document.querySelector(".cam-frame");
+        const wrapRect = wrapEl.getBoundingClientRect();
+        const frameRect = frameEl.getBoundingClientRect();
+
+        // สัดส่วน (0-1) ของกรอบขาวเทียบกับพื้นที่วิดีโอที่แสดงบนจอ
+        const leftFrac = (frameRect.left - wrapRect.left) / wrapRect.width;
+        const topFrac = (frameRect.top - wrapRect.top) / wrapRect.height;
+        const widthFrac = frameRect.width / wrapRect.width;
+        const heightFrac = frameRect.height / wrapRect.height;
+
+        // .cam-wrap เป็นสี่เหลี่ยมจัตุรัส (aspect-ratio: 1/1) และวิดีโอใช้ object-fit: cover
+        // ดังนั้นส่วนที่แสดงจริงคือด้านที่สั้นกว่าของวิดีโอ (crop ตรงกลาง)
+        const s = Math.min(video.videoWidth, video.videoHeight);
+        const offsetX = (video.videoWidth - s) / 2;
+        const offsetY = (video.videoHeight - s) / 2;
+
+        const width = Math.max(1, Math.round(widthFrac * s));
+        const height = Math.max(1, Math.round(heightFrac * s));
+        const x = Math.round(offsetX + leftFrac * s);
+        const y = Math.round(offsetY + topFrac * s);
+
+        const downScaledWidth = 400;
+        const downScaledHeight = Math.max(1, Math.round(400 * (height / width)));
+
+        return { x, y, width, height, downScaledWidth, downScaledHeight };
+      }
+
       async function openCamera() {
         document.getElementById("scanIdle").style.display = "none";
         document.getElementById("scanResult").style.display = "none";
@@ -968,6 +1000,7 @@
               preferredCamera: "environment",
               highlightScanRegion: true,
               highlightCodeOutline: true,
+              calculateScanRegion: calcScanRegionFromFrame,
               maxScansPerSecond: 25
             }
           );
