@@ -541,10 +541,19 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26071600013",
+    "boxNo": "S26071700055",
     "itemCode": "10-29531-000",
     "itemName": "HN-90N7DG CONTACT NOZE HN-90N7(D)-Gｺﾝﾀｸﾄﾉｰｽﾞ",
-    "qty": 95,
+    "qty": 77,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700056",
+    "itemCode": "10-29531-000",
+    "itemName": "HN-90N7DG CONTACT NOZE HN-90N7(D)-Gｺﾝﾀｸﾄﾉｰｽﾞ",
+    "qty": 18,
     "tray": 4,
     "note": "#REF!"
   },
@@ -2020,7 +2029,7 @@
     "boxNo": "S26071500162",
     "itemCode": "10-28903-000",
     "itemName": "PICK LOSTWAX ﾂﾒ (ﾛｽﾄﾜｯｸｽ)(N13103020X)",
-    "qty": 62,
+    "qty": 50,
     "tray": 9,
     "note": "#REF!"
   },
@@ -2137,7 +2146,7 @@
     "boxNo": "S26071500227",
     "itemCode": "10-23947-000",
     "itemName": "HGC1508M SJP CONTROL STAND A HGC1508M SJP制御台A(R.L共通)",
-    "qty": 98,
+    "qty": 90,
     "tray": 9,
     "note": "#REF!"
   },
@@ -4456,33 +4465,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26071500168",
-    "itemCode": "10-29589-000",
-    "itemName": "HOIST MOTOR BRACKET 巻上げﾓｰﾀﾌﾞﾗｹｯﾄ",
-    "qty": 32,
-    "tray": 15,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26071500169",
-    "itemCode": "10-29589-000",
-    "itemName": "HOIST MOTOR BRACKET 巻上げﾓｰﾀﾌﾞﾗｹｯﾄ",
-    "qty": 32,
-    "tray": 15,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26071500170",
-    "itemCode": "10-29589-000",
-    "itemName": "HOIST MOTOR BRACKET 巻上げﾓｰﾀﾌﾞﾗｹｯﾄ",
-    "qty": 16,
-    "tray": 15,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26071500178",
     "itemCode": "10-29021-000",
     "itemName": "VIBRATION BASE STAND 振動ﾍﾞｰｽ台 (AC-102002-A5)",
@@ -5070,297 +5052,297 @@
     "type": "SEA",
     "boxNo": "S26071700001",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 9,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700002",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 9,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700003",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 2,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700004",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 9,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700005",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 9,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700006",
     "itemCode": "10-06941-100",
-    "itemName": "-",
+    "itemName": "STAINLESS STUFFING ADK21-32A,Fｽﾀﾌｨﾝｸﾞ",
     "qty": 2,
     "tray": 17,
-    "note": "9,Tray#9,2 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700033",
     "itemCode": "10-21910-100",
-    "itemName": "-",
+    "itemName": "BODY ボディ（QLSNDM0801S-01）",
     "qty": 50,
     "tray": 17,
-    "note": "264,Tray#88,3pcs"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700045",
     "itemCode": "10-08343-110",
-    "itemName": "-",
+    "itemName": "JOINT A 隔壁ﾎｰｽ継ぎ手A(03-NBS-PI-001-01)",
     "qty": 144,
     "tray": 17,
-    "note": "144,tray#48,6 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700046",
     "itemCode": "10-08343-110",
-    "itemName": "-",
+    "itemName": "JOINT A 隔壁ﾎｰｽ継ぎ手A(03-NBS-PI-001-01)",
     "qty": 61,
     "tray": 17,
-    "note": "144,tray#48,6 pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700047",
     "itemCode": "10-20849-120",
-    "itemName": "-",
+    "itemName": "AXD-15A-D, E BODY AXD-15A-D,E ﾎﾞﾃﾞｨ　(D3-231737)",
     "qty": 20,
     "tray": 17,
-    "note": "CKD,20,2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700048",
     "itemCode": "10-20849-120",
-    "itemName": "-",
+    "itemName": "AXD-15A-D, E BODY AXD-15A-D,E ﾎﾞﾃﾞｨ　(D3-231737)",
     "qty": 20,
     "tray": 17,
-    "note": "CKD,20,2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700049",
     "itemCode": "10-20849-120",
-    "itemName": "-",
+    "itemName": "AXD-15A-D, E BODY AXD-15A-D,E ﾎﾞﾃﾞｨ　(D3-231737)",
     "qty": 20,
     "tray": 17,
-    "note": "CKD,20,2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700050",
     "itemCode": "10-20849-120",
-    "itemName": "-",
+    "itemName": "AXD-15A-D, E BODY AXD-15A-D,E ﾎﾞﾃﾞｨ　(D3-231737)",
     "qty": 5,
     "tray": 17,
-    "note": "CKD,20,2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700051",
     "itemCode": "10-26375-130",
-    "itemName": "-",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
     "qty": 35,
     "tray": 17,
-    "note": "CKD,Tray35=2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700052",
     "itemCode": "10-26375-130",
-    "itemName": "-",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
     "qty": 15,
     "tray": 17,
-    "note": "CKD,Tray35=2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700053",
     "itemCode": "10-26375-130",
-    "itemName": "-",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
     "qty": 35,
     "tray": 17,
-    "note": "CKD,Tray35=2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700054",
     "itemCode": "10-26375-130",
-    "itemName": "-",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
     "qty": 15,
     "tray": 17,
-    "note": "CKD,Tray35=2pcs."
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700028",
     "itemCode": "10-25718-000",
-    "itemName": "-",
+    "itemName": "HN-50S1(D)CONTACT NOSE HN-50S1(D)ｺﾝﾀｸﾄﾉｰｽﾞ",
     "qty": 180,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700029",
     "itemCode": "10-23214-000",
-    "itemName": "-",
+    "itemName": "HN-65N1 DOOR (HN11382) HN-65N1 ﾄﾞｱ (HN11382)",
     "qty": 100,
     "tray": 18,
-    "note": "A"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700030",
     "itemCode": "10-23214-000",
-    "itemName": "-",
+    "itemName": "HN-65N1 DOOR (HN11382) HN-65N1 ﾄﾞｱ (HN11382)",
     "qty": 100,
     "tray": 18,
-    "note": "A"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700031",
     "itemCode": "10-23214-000",
-    "itemName": "-",
+    "itemName": "HN-65N1 DOOR (HN11382) HN-65N1 ﾄﾞｱ (HN11382)",
     "qty": 27,
     "tray": 18,
-    "note": "A"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700032",
     "itemCode": "10-22036-000",
-    "itemName": "-",
+    "itemName": "YG CAM CONTROLLED LEVER A 5G YGｶﾑ制御ﾚﾊﾞｰ A 5G(KLC0037M)",
     "qty": 100,
     "tray": 18,
-    "note": "A"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700034",
     "itemCode": "10-08754-000",
-    "itemName": "-",
+    "itemName": "CLAMP ARM ｸﾗﾝﾌﾟｱｰﾑSCS13(SBX10-305850-12)",
     "qty": 410,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700035",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700036",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700037",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700038",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700039",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700040",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700041",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700042",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 60,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700043",
     "itemCode": "10-26144-000",
-    "itemName": "-",
+    "itemName": "JOINT,TURN BUCKLE JOINT,TURN BUCKLE",
     "qty": 40,
     "tray": 18,
-    "note": "M"
+    "note": "#REF!"
   },
   {
     "type": "SEA",
     "boxNo": "S26071700044",
     "itemCode": "10-27039-000",
-    "itemName": "-",
+    "itemName": "CN238 SEND NAIL CN238 ｵｸﾘﾂﾞﾒ",
     "qty": 200,
     "tray": 18,
-    "note": "A"
+    "note": "#REF!"
   }
 ]
