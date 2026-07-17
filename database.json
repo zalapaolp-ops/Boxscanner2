@@ -5065,5 +5065,302 @@
     "qty": 6,
     "tray": 16,
     "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700001",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 9,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700002",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 9,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700003",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 2,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700004",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 9,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700005",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 9,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700006",
+    "itemCode": "10-06941-100",
+    "itemName": "-",
+    "qty": 2,
+    "tray": 17,
+    "note": "9,Tray#9,2 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700033",
+    "itemCode": "10-21910-100",
+    "itemName": "-",
+    "qty": 50,
+    "tray": 17,
+    "note": "264,Tray#88,3pcs"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700045",
+    "itemCode": "10-08343-110",
+    "itemName": "-",
+    "qty": 144,
+    "tray": 17,
+    "note": "144,tray#48,6 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700046",
+    "itemCode": "10-08343-110",
+    "itemName": "-",
+    "qty": 61,
+    "tray": 17,
+    "note": "144,tray#48,6 pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700047",
+    "itemCode": "10-20849-120",
+    "itemName": "-",
+    "qty": 20,
+    "tray": 17,
+    "note": "CKD,20,2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700048",
+    "itemCode": "10-20849-120",
+    "itemName": "-",
+    "qty": 20,
+    "tray": 17,
+    "note": "CKD,20,2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700049",
+    "itemCode": "10-20849-120",
+    "itemName": "-",
+    "qty": 20,
+    "tray": 17,
+    "note": "CKD,20,2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700050",
+    "itemCode": "10-20849-120",
+    "itemName": "-",
+    "qty": 5,
+    "tray": 17,
+    "note": "CKD,20,2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700051",
+    "itemCode": "10-26375-130",
+    "itemName": "-",
+    "qty": 35,
+    "tray": 17,
+    "note": "CKD,Tray35=2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700052",
+    "itemCode": "10-26375-130",
+    "itemName": "-",
+    "qty": 15,
+    "tray": 17,
+    "note": "CKD,Tray35=2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700053",
+    "itemCode": "10-26375-130",
+    "itemName": "-",
+    "qty": 35,
+    "tray": 17,
+    "note": "CKD,Tray35=2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700054",
+    "itemCode": "10-26375-130",
+    "itemName": "-",
+    "qty": 15,
+    "tray": 17,
+    "note": "CKD,Tray35=2pcs."
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700028",
+    "itemCode": "10-25718-000",
+    "itemName": "-",
+    "qty": 180,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700029",
+    "itemCode": "10-23214-000",
+    "itemName": "-",
+    "qty": 100,
+    "tray": 18,
+    "note": "A"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700030",
+    "itemCode": "10-23214-000",
+    "itemName": "-",
+    "qty": 100,
+    "tray": 18,
+    "note": "A"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700031",
+    "itemCode": "10-23214-000",
+    "itemName": "-",
+    "qty": 27,
+    "tray": 18,
+    "note": "A"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700032",
+    "itemCode": "10-22036-000",
+    "itemName": "-",
+    "qty": 100,
+    "tray": 18,
+    "note": "A"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700034",
+    "itemCode": "10-08754-000",
+    "itemName": "-",
+    "qty": 410,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700035",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700036",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700037",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700038",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700039",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700040",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700041",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700042",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 60,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700043",
+    "itemCode": "10-26144-000",
+    "itemName": "-",
+    "qty": 40,
+    "tray": 18,
+    "note": "M"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26071700044",
+    "itemCode": "10-27039-000",
+    "itemName": "-",
+    "qty": 200,
+    "tray": 18,
+    "note": "A"
   }
 ]
