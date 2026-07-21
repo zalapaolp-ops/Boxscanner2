@@ -1,5 +1,1355 @@
 [
   {
+    "type": "AIR",
+    "boxNo": "S26072000050",
+    "itemCode": "10-22894-000",
+    "itemName": "USB COVER USBｶﾊﾞｰ",
+    "qty": 20,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000086",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000087",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000088",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 2,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000089",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000090",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000091",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 2,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000092",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000093",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 9,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000094",
+    "itemCode": "10-06940-100",
+    "itemName": "STAINLESS STUFFING AP21-32A,F-ｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ",
+    "qty": 2,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000095",
+    "itemCode": "10-27394-100",
+    "itemName": "CONNECTOR BASE C CONNECTOR BASE C",
+    "qty": 25,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000100",
+    "itemCode": "10-28185-000",
+    "itemName": "RING (E0034-101-53B) RING (E0034-101-53B)",
+    "qty": 96,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000101",
+    "itemCode": "10-28185-000",
+    "itemName": "RING (E0034-101-53B) RING (E0034-101-53B)",
+    "qty": 19,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000114",
+    "itemCode": "10-05899-000",
+    "itemName": "HOLDER 照号2 受金(L) (2J301853A1726Z)",
+    "qty": 15,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000115",
+    "itemCode": "10-26345-230",
+    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
+    "qty": 35,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000116",
+    "itemCode": "10-26345-230",
+    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
+    "qty": 15,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000117",
+    "itemCode": "10-26375-130",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
+    "qty": 35,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000118",
+    "itemCode": "10-26375-130",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
+    "qty": 15,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000119",
+    "itemCode": "10-26375-130",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
+    "qty": 35,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000120",
+    "itemCode": "10-26375-130",
+    "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
+    "qty": 15,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000121",
+    "itemCode": "10-20619-110",
+    "itemName": "PARABOLOID HOLDER 放物面鏡ﾎﾙﾀﾞ",
+    "qty": 40,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000122",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000123",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000124",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000125",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000126",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000127",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000128",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000129",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000130",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000131",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000132",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000133",
+    "itemCode": "10-26187-130",
+    "itemName": "ARM(L1-Z) (5003-500921-11) ARM(L1-Z) (5003-500921-11)",
+    "qty": 2,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000134",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000135",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000136",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000137",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000138",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000139",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000140",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000141",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000142",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000143",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000144",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 18,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000145",
+    "itemCode": "10-26188-130",
+    "itemName": "ARM(R-Z) ARM(R-Z)",
+    "qty": 2,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000148",
+    "itemCode": "10-22682-000",
+    "itemName": "REVERSE VALVE ﾘﾊﾞｰｽﾊﾞﾙﾌﾞ(CP-6060)",
+    "qty": 100,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000149",
+    "itemCode": "10-22682-000",
+    "itemName": "REVERSE VALVE ﾘﾊﾞｰｽﾊﾞﾙﾌﾞ(CP-6060)",
+    "qty": 200,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000150",
+    "itemCode": "10-22682-000",
+    "itemName": "REVERSE VALVE ﾘﾊﾞｰｽﾊﾞﾙﾌﾞ(CP-6060)",
+    "qty": 100,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000018",
+    "itemCode": "10-05940-000",
+    "itemName": "MANIFOLD BODY 30 ﾏﾆﾎｰﾙﾄﾞﾎﾞﾃﾞｨ(VVCW30-1)",
+    "qty": 120,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000019",
+    "itemCode": "10-05940-000",
+    "itemName": "MANIFOLD BODY 30 ﾏﾆﾎｰﾙﾄﾞﾎﾞﾃﾞｨ(VVCW30-1)",
+    "qty": 16,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000020",
+    "itemCode": "10-05940-000",
+    "itemName": "MANIFOLD BODY 30 ﾏﾆﾎｰﾙﾄﾞﾎﾞﾃﾞｨ(VVCW30-1)",
+    "qty": 100,
+    "tray": 1,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000001",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000002",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000003",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000004",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000005",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000006",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000007",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000008",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000009",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000010",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000011",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000012",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000013",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 15,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000014",
+    "itemCode": "10-20007-000",
+    "itemName": "GR-HOLD GR-HOLD",
+    "qty": 1,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000015",
+    "itemCode": "10-21290-000",
+    "itemName": "TERN NUT M8 LONG ﾀｰﾝﾅｯﾄ M8 ﾛﾝｸﾞ TNSM8NA",
+    "qty": 900,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000016",
+    "itemCode": "10-21290-000",
+    "itemName": "TERN NUT M8 LONG ﾀｰﾝﾅｯﾄ M8 ﾛﾝｸﾞ TNSM8NA",
+    "qty": 900,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000017",
+    "itemCode": "10-21290-000",
+    "itemName": "TERN NUT M8 LONG ﾀｰﾝﾅｯﾄ M8 ﾛﾝｸﾞ TNSM8NA",
+    "qty": 346,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000021",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000022",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000023",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000024",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000025",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000026",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000027",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000028",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000029",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000030",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000031",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000032",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000033",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000034",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000035",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000036",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000037",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000038",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000039",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000040",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000041",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000042",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000043",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000044",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000045",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000046",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000047",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000048",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000049",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 12,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000051",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000052",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000053",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000054",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000055",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000056",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 144,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000057",
+    "itemCode": "10-28214-000",
+    "itemName": "FIRE RAISING 火起こし用部品",
+    "qty": 136,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000058",
+    "itemCode": "10-08467-000",
+    "itemName": "DOOR DRIVING PLATE ﾄﾞｱ駆動板(SP447966)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000059",
+    "itemCode": "10-01069-000",
+    "itemName": "SC-4H-SP ﾚ-ﾙ押付板(IS4H-3037)",
+    "qty": 9,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000060",
+    "itemCode": "10-27512-000",
+    "itemName": "MOUTH PROP(RATCHET) 開口器(ﾗﾁｪｯﾄ)(0985)",
+    "qty": 100,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000061",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000062",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000063",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000064",
+    "itemCode": "10-20971-000",
+    "itemName": "FLAP 羽根 (2T-0924)",
+    "qty": 30,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000065",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000066",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000067",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000068",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000069",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000070",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000071",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000072",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000073",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000074",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000075",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000076",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000077",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000078",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000079",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000080",
+    "itemCode": "10-20551-000",
+    "itemName": "SUPPORT FIVAI-45 ｻﾎﾟｰﾄFIVAI-45 (74761268-01)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000081",
+    "itemCode": "10-30363-000",
+    "itemName": "MAIN BODY 本体",
+    "qty": 3,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000082",
+    "itemCode": "10-30325-000",
+    "itemName": "APG-KKY3 INSPECTION PANEL RECEIVE BLOCK APG-KKY3 ﾃﾝｹﾝﾊﾟﾈﾙｳｹﾌﾞﾛｯｸ",
+    "qty": 3,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000083",
+    "itemCode": "10-30389-000",
+    "itemName": "SHUTTLECOCK 羽根",
+    "qty": 6,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000084",
+    "itemCode": "10-30390-000",
+    "itemName": "FILM CLIP ﾌｨﾙﾑｸﾘｯﾌﾟ",
+    "qty": 4,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000085",
+    "itemCode": "10-30390-000",
+    "itemName": "FILM CLIP ﾌｨﾙﾑｸﾘｯﾌﾟ",
+    "qty": 2,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000096",
+    "itemCode": "10-30202-120",
+    "itemName": "CLAMP ｸﾗﾝﾌﾟ",
+    "qty": 38,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000097",
+    "itemCode": "10-30202-120",
+    "itemName": "CLAMP ｸﾗﾝﾌﾟ",
+    "qty": 12,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000098",
+    "itemCode": "10-30351-120",
+    "itemName": "CUP HOOK ｶｯﾌﾟﾌｯｸ",
+    "qty": 120,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000099",
+    "itemCode": "10-30359-110",
+    "itemName": "CLAMP SET FOR MINI HAN-CHAN ﾐﾆﾊﾝﾁｬﾝ用ｸﾗﾝﾌﾟｾｯﾄ",
+    "qty": 3,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000102",
+    "itemCode": "10-20710-000",
+    "itemName": "NAIL FOR UPPER BOBBIN 上ﾎﾞﾋﾞﾝ用爪(LCR･NRﾀｲﾌﾟ)　(A6-14)",
+    "qty": 800,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000103",
+    "itemCode": "10-20710-000",
+    "itemName": "NAIL FOR UPPER BOBBIN 上ﾎﾞﾋﾞﾝ用爪(LCR･NRﾀｲﾌﾟ)　(A6-14)",
+    "qty": 210,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000104",
+    "itemCode": "10-20711-000",
+    "itemName": "NAIL FOR LOWER BOBBIN 下ﾎﾞﾋﾞﾝ用爪(LCR･NR)　　(A10-4)",
+    "qty": 800,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000105",
+    "itemCode": "10-20711-000",
+    "itemName": "NAIL FOR LOWER BOBBIN 下ﾎﾞﾋﾞﾝ用爪(LCR･NR)　　(A10-4)",
+    "qty": 210,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000106",
+    "itemCode": "10-10792-000",
+    "itemName": "ARM ｱｰﾑ",
+    "qty": 90,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000107",
+    "itemCode": "10-27390-000",
+    "itemName": "HOUSING_PINCH IHP10016 HOUSING_PINCH IHP10016",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000108",
+    "itemCode": "10-27390-000",
+    "itemName": "HOUSING_PINCH IHP10016 HOUSING_PINCH IHP10016",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000109",
+    "itemCode": "10-27390-000",
+    "itemName": "HOUSING_PINCH IHP10016 HOUSING_PINCH IHP10016",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000110",
+    "itemCode": "10-27396-000",
+    "itemName": "UPR JAW BED RAIL M / T BRKT UPR JAW BED RAIL M / T BRKT",
+    "qty": 16,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000111",
+    "itemCode": "10-27396-000",
+    "itemName": "UPR JAW BED RAIL M / T BRKT UPR JAW BED RAIL M / T BRKT",
+    "qty": 16,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000112",
+    "itemCode": "10-27396-000",
+    "itemName": "UPR JAW BED RAIL M / T BRKT UPR JAW BED RAIL M / T BRKT",
+    "qty": 16,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000113",
+    "itemCode": "10-27396-000",
+    "itemName": "UPR JAW BED RAIL M / T BRKT UPR JAW BED RAIL M / T BRKT",
+    "qty": 5,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000146",
+    "itemCode": "10-30315-110",
+    "itemName": "OUTSIDE SUPPRESSION EXTRA THICK 外押え (極厚物用)",
+    "qty": 10,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
+    "type": "AIR",
+    "boxNo": "S26072000147",
+    "itemCode": "10-30316-110",
+    "itemName": "MEDIUM SUPPRESSION EXTRA THICK 中押え (極厚物用)",
+    "qty": 9,
+    "tray": 2,
+    "note": "#REF!"
+  },
+  {
     "type": "SEA",
     "boxNo": "S26071500265",
     "itemCode": "10-06938-100",
