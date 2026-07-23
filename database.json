@@ -1351,24 +1351,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200046",
-    "itemCode": "10-22662-000",
-    "itemName": "CLICK CAN 190 ｸﾘｯｸｶﾝ190 (GT5449F1)",
-    "qty": 144,
-    "tray": 1,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200047",
-    "itemCode": "10-22662-000",
-    "itemName": "CLICK CAN 190 ｸﾘｯｸｶﾝ190 (GT5449F1)",
-    "qty": 126,
-    "tray": 1,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26072200269",
     "itemCode": "10-22894-000",
     "itemName": "USB COVER USBｶﾊﾞｰ",
@@ -1927,87 +1909,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200576",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 35,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200577",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 15,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200578",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 35,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200579",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 15,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200580",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 35,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200581",
-    "itemCode": "10-26345-230",
-    "itemName": "AP11-8A 10A BODY AP11-8A、10Aﾎﾞﾃﾞｨ ",
-    "qty": 15,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200638",
-    "itemCode": "10-07084-110",
-    "itemName": "GATE ｹﾞｰﾄ(1JE00241100)",
-    "qty": 70,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200639",
-    "itemCode": "10-07084-110",
-    "itemName": "GATE ｹﾞｰﾄ(1JE00241100)",
-    "qty": 70,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200640",
-    "itemCode": "10-07084-110",
-    "itemName": "GATE ｹﾞｰﾄ(1JE00241100)",
-    "qty": 20,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26072200644",
     "itemCode": "10-26375-130",
     "itemName": "AP11-8A10A STUFFING AP11-8A、10Aｽﾀﾌｨﾝｸﾞ(F3-116001)",
@@ -2044,28 +1945,118 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200381",
-    "itemCode": "10-30122-100",
-    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
-    "qty": 17,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200402",
-    "itemCode": "10-30122-100",
-    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "boxNo": "S26072300030",
+    "itemCode": "10-22468-200",
+    "itemName": "BODY ﾎﾞﾃﾞｨ  (QLSCH32L-01)",
     "qty": 40,
     "tray": 4,
     "note": "#REF!"
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200403",
-    "itemCode": "10-30122-100",
-    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
-    "qty": 29,
+    "boxNo": "S26072300031",
+    "itemCode": "10-22468-200",
+    "itemName": "BODY ﾎﾞﾃﾞｨ  (QLSCH32L-01)",
+    "qty": 40,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300032",
+    "itemCode": "10-22468-200",
+    "itemName": "BODY ﾎﾞﾃﾞｨ  (QLSCH32L-01)",
+    "qty": 20,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300040",
+    "itemCode": "10-06648-100",
+    "itemName": "STAINLESS STUFFING ADK21-40AFｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ鋳物",
+    "qty": 6,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300041",
+    "itemCode": "10-06648-100",
+    "itemName": "STAINLESS STUFFING ADK21-40AFｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ鋳物",
+    "qty": 6,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300042",
+    "itemCode": "10-06648-100",
+    "itemName": "STAINLESS STUFFING ADK21-40AFｽﾃﾝﾚｽｽﾀﾌｨﾝｸﾞ鋳物",
+    "qty": 3,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300044",
+    "itemCode": "10-27997-100",
+    "itemName": "GEAR CASE DETENT MSAM MSAM RENEWAL ｷﾞｱｹｰｽ(DETENT MSAM,MSAM改)(E-32925)",
+    "qty": 17,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300055",
+    "itemCode": "10-25893-120",
+    "itemName": "PORT (PKAT321200A0003) PORT (PKAT321200A0003)",
+    "qty": 9,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300056",
+    "itemCode": "10-25893-120",
+    "itemName": "PORT (PKAT321200A0003) PORT (PKAT321200A0003)",
+    "qty": 5,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300004",
+    "itemCode": "10-25616-000",
+    "itemName": "HN-50N CONTACT ARM C HN-50NｺﾝﾀｸﾄｱｰﾑC (HN11566)",
+    "qty": 26,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300005",
+    "itemCode": "10-25639-000",
+    "itemName": "CK-231EV REVERSE NAIL CK-231EVｷﾞｬｸｼﾂﾞﾒ",
+    "qty": 92,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300006",
+    "itemCode": "10-25082-000",
+    "itemName": "FLOW QUANTITY ADJUSTMENT AXIS 流量調整軸 (N403513）",
+    "qty": 1,
+    "tray": 4,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300027",
+    "itemCode": "10-23241-000",
+    "itemName": "LINE GUIDE C RB-390 ｾﾝｶﾞｲﾄﾞC (RB10364)",
+    "qty": 45,
     "tray": 4,
     "note": "#REF!"
   },
@@ -2381,15 +2372,6 @@
     "itemCode": "10-23634-000",
     "itemName": "BLOCK BLOCK (N210196451AA)",
     "qty": 30,
-    "tray": 5,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200053",
-    "itemCode": "10-07533-000",
-    "itemName": "BRACKET シジカナグM(D5-457275)",
-    "qty": 19,
     "tray": 5,
     "note": "#REF!"
   },
@@ -4186,15 +4168,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200385",
-    "itemCode": "10-27075-100",
-    "itemName": "DRIVEN HOUSING2 従動部ﾊｳｼﾞﾝｸﾞ(2)",
-    "qty": 17,
-    "tray": 10,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26072200398",
     "itemCode": "10-07965-100",
     "itemName": "LEVER 1 レバー1(FN-1012B002)",
@@ -5041,96 +5014,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200496",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200497",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200498",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200499",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200500",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200501",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200502",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 24,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200503",
-    "itemCode": "10-12057-000",
-    "itemName": "FINGER HOLDER YBM-640V ﾌｨﾝｶﾞｰﾎﾙﾀﾞｰ",
-    "qty": 12,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200504",
-    "itemCode": "10-23019-000",
-    "itemName": "72T LOPER BOBBIN NAIL 72T下ﾎﾞﾋﾞﾝ用爪(φ6)",
-    "qty": 700,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200505",
-    "itemCode": "10-23019-000",
-    "itemName": "72T LOPER BOBBIN NAIL 72T下ﾎﾞﾋﾞﾝ用爪(φ6)",
-    "qty": 300,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26072200506",
     "itemCode": "10-23020-000",
     "itemName": "72T UPPER BOBBIN NAIL 72T上ﾎﾞﾋﾞﾝ用爪(φ6)",
@@ -5297,6 +5180,96 @@
     "itemCode": "10-21259-000",
     "itemName": "RATCHET RATCHET",
     "qty": 500,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300029",
+    "itemCode": "10-26519-000",
+    "itemName": "FRAME ﾌﾚｰﾑ (4304214)",
+    "qty": 16,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300033",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 15,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300034",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 2,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300035",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 15,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300036",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 15,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300037",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 15,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300038",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 15,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300039",
+    "itemCode": "10-30122-100",
+    "itemName": "CROSS HANDLE Crossﾊﾝﾄﾞﾙ",
+    "qty": 9,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300045",
+    "itemCode": "10-08610-100",
+    "itemName": "ADJUSTER JIG 高さ調整治具",
+    "qty": 95,
+    "tray": 13,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300046",
+    "itemCode": "10-08466-000",
+    "itemName": "STOPPER FITTING 後面止金具(SP448078)",
+    "qty": 23,
     "tray": 13,
     "note": "#REF!"
   },
@@ -6841,33 +6814,6 @@
   },
   {
     "type": "SEA",
-    "boxNo": "S26072200513",
-    "itemCode": "10-02615-000",
-    "itemName": "SHAFT BEARING FLANGE ｼｬﾌﾄ軸受ﾌﾗﾝｼﾞ(19075H772P4)",
-    "qty": 81,
-    "tray": 17,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200514",
-    "itemCode": "10-20397-000",
-    "itemName": "Inclined axis base 傾斜軸ﾍﾞｰｽ　(312BAK533)",
-    "qty": 36,
-    "tray": 17,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200515",
-    "itemCode": "10-20397-000",
-    "itemName": "Inclined axis base 傾斜軸ﾍﾞｰｽ　(312BAK533)",
-    "qty": 19,
-    "tray": 17,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
     "boxNo": "S26072200522",
     "itemCode": "10-02615-000",
     "itemName": "SHAFT BEARING FLANGE ｼｬﾌﾄ軸受ﾌﾗﾝｼﾞ(19075H772P4)",
@@ -7169,6 +7115,285 @@
     "itemCode": "10-23485-110",
     "itemName": "SPIRING BLOCK A ｽﾌﾟﾘﾝｸﾞﾌﾞﾛｯｸ(A)(1E000047924)",
     "qty": 5,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300003",
+    "itemCode": "10-22895-000",
+    "itemName": "USB BASE USBﾍﾞｰｽ",
+    "qty": 15,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300007",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300008",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300009",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300010",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300011",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300012",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300013",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300014",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300015",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300016",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300017",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300018",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300019",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300020",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300021",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300022",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300023",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300024",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 80,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300025",
+    "itemCode": "10-28807-000",
+    "itemName": "SLEEVE A ｽﾘｰﾌﾞA(RB13135)",
+    "qty": 60,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300026",
+    "itemCode": "10-25633-000",
+    "itemName": "HR-AV1TS DRIVER GUIDE C HR-AV1TS ﾄﾞﾗｲﾊﾞｶﾞｲﾄﾞC(HR10765)",
+    "qty": 19,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300028",
+    "itemCode": "10-26810-000",
+    "itemName": "RB441T(CE)CUTTER RB441T(CE)ｶｯﾀ (RB12643),10-26810-000,",
+    "qty": 176,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300043",
+    "itemCode": "10-27332-100",
+    "itemName": "DRIVER ﾄﾞﾗｲﾊﾞ",
+    "qty": 9,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300048",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300049",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300050",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300051",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300052",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300053",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 7,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300054",
+    "itemCode": "10-05784-110",
+    "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
+    "qty": 4,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300047",
+    "itemCode": "10-29391-000",
+    "itemName": "REPUTATION 受け",
+    "qty": 59,
     "tray": 18,
     "note": "#REF!"
   }
