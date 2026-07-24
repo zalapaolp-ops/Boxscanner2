@@ -1894,16 +1894,7 @@
     "boxNo": "S26072200552",
     "itemCode": "10-29799-110",
     "itemName": "BLOCK ﾌﾞﾛｯｸ",
-    "qty": 18,
-    "tray": 4,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200553",
-    "itemCode": "10-29799-110",
-    "itemName": "BLOCK ﾌﾞﾛｯｸ",
-    "qty": 16,
+    "qty": 12,
     "tray": 4,
     "note": "#REF!"
   },
@@ -2335,16 +2326,7 @@
     "boxNo": "S26072200034",
     "itemCode": "10-20007-000",
     "itemName": "GR-HOLD GR-HOLD",
-    "qty": 15,
-    "tray": 5,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200035",
-    "itemCode": "10-20007-000",
-    "itemName": "GR-HOLD GR-HOLD",
-    "qty": 3,
+    "qty": 14,
     "tray": 5,
     "note": "#REF!"
   },
@@ -2551,7 +2533,7 @@
     "boxNo": "S26072200091",
     "itemCode": "10-11159-000",
     "itemName": "HOLDER HOLDER (REK300314F)",
-    "qty": 20,
+    "qty": 13,
     "tray": 6,
     "note": "#REF!"
   },
@@ -5080,25 +5062,7 @@
     "boxNo": "S26072200519",
     "itemCode": "10-28051-000",
     "itemName": "H Folk (2756 4681 1000) H Folk (2756 4681 1000)",
-    "qty": 300,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200520",
-    "itemCode": "10-28051-000",
-    "itemName": "H Folk (2756 4681 1000) H Folk (2756 4681 1000)",
-    "qty": 300,
-    "tray": 13,
-    "note": "#REF!"
-  },
-  {
-    "type": "SEA",
-    "boxNo": "S26072200521",
-    "itemCode": "10-28051-000",
-    "itemName": "H Folk (2756 4681 1000) H Folk (2756 4681 1000)",
-    "qty": 100,
+    "qty": 261,
     "tray": 13,
     "note": "#REF!"
   },
@@ -5809,7 +5773,7 @@
     "boxNo": "S26072200539",
     "itemCode": "10-21259-000",
     "itemName": "RATCHET RATCHET",
-    "qty": 500,
+    "qty": 450,
     "tray": 15,
     "note": "#REF!"
   },
@@ -7385,6 +7349,42 @@
     "itemCode": "10-05784-110",
     "itemName": "SRL2-50A DAPTER ｱﾀﾞﾌﾟﾀSRL2-50-A(F3-341626)",
     "qty": 4,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300047",
+    "itemCode": "10-29391-000",
+    "itemName": "REPUTATION 受け",
+    "qty": 59,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300057",
+    "itemCode": "10-23646-000",
+    "itemName": "LEVER LEVER (H159202783)",
+    "qty": 575,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300178",
+    "itemCode": "10-06948-100",
+    "itemName": "STAINLESS BODY AD,AP,ADK,APK21-50Aﾎﾞﾃﾞｨ",
+    "qty": 3,
+    "tray": 18,
+    "note": "#REF!"
+  },
+  {
+    "type": "SEA",
+    "boxNo": "S26072300179",
+    "itemCode": "10-06948-100",
+    "itemName": "STAINLESS BODY AD,AP,ADK,APK21-50Aﾎﾞﾃﾞｨ",
+    "qty": 2,
     "tray": 18,
     "note": "#REF!"
   },
